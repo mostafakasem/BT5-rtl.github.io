@@ -1,0 +1,95 @@
+{% extends "inner-layout.html" %} 
+{% set title = 'contact us' %} 
+
+{% block content %}
+ 
+  <div class="page-layout">
+    <div class="container">
+        {% include 'partials/_breadcrumb.html' %}   
+        <div class="contact-page"> 
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        Message sent!
+                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                     </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="mb-3"> 
+                                <label for="2" class="form-label"> الاسم </label>
+                                <input type="text" class="form-control" id="">                   
+                            </div>
+                        </div> 
+                        <div class="col-md-6 col-lg-4">
+                            <div class="mb-3"> 
+                                <label for="2" class="form-label"> البريد الالكتروني </label>
+                                <input type="text" class="form-control" id="">                   
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="mb-3">
+                                <label for="1" class="form-label"> نوع الرسالة </label>
+                                <select class="form-select">
+                                    <option> إختر </option>
+                                    <option>شكوي</option> 
+                                    <option>مقترح</option> 
+                                </select>        
+                            </div>
+                        </div> 
+                        <div class="col-md-6 col-lg-4">
+                            <div class="mb-3"> 
+                                <label for="2" class="form-label">  عنوان الرسالة  </label>
+                                <input type="text" class="form-control" id="">
+                            </div>
+                        </div> 
+                    </div>  
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3"> 
+                                <label for="2" class="form-label">  مضمون الرسالة  </label>
+                                <textarea name="address" class="form-control" id="" cols="30" rows="4"></textarea>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="my-4">
+                        <a href="index.html" class="btn btn-primary px-4 me-3"> إرسـال   </a> 
+                        <a href="index.html" class="btn">إلغاء</a>
+                    </div> 
+                </div>
+                <div class="col-lg-3">
+                    <div class="bg-light mb-4 p-4">
+                        <h2 class="h5 text-dark">Email</h2> 
+                        <p class="m-0">
+                            <a href="mailto:Hd@elm.sa" target="_blank" title="البريد الالكتروني">   Hd@elm.sa  </a>    
+                        </p>
+                    </div>
+                    <div class="bg-light mb-4 p-4">
+                        <h2 class="h5 text-dark">Phone</h2> 
+                        <p class="m-0">
+                            <a href="tel:920000356" target="_blank" title="الدعم الفني "> 
+                                920000356
+                            </a> 
+                        </p>
+                    </div>
+                    <div class="bg-light mb-4 p-4">
+                        <h2 class="h5 text-dark">Twitter</h2> 
+                        <p class="m-0">
+                            <a data-screen-name="@ElmHelp" href="https://twitter.com/messages/compose?recipient_id=1163381513750220801" target="_blank" title="  دعم تويتر "> ElmHelp@ </a>
+                        </p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        
+      
+    </div> 
+  </div> 
+
+{% endblock %} 
+ 
+
+{% block scripts %}
+ 
+{% endblock %}

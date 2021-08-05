@@ -1,0 +1,7 @@
+; Nexus proxy registry pointing to http://registry.npmjs.org/
+registry = https://nexus.elm.sa/repository/npm-group/
+
+; we don't want to put certificates in .npmrc
+strict-ssl = false
+
+loglevel = silly

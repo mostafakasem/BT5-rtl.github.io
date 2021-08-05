@@ -1,0 +1,31 @@
+{
+  "name": "dcctheme",
+  "version": "1.0.0",
+  "description": "DCC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node node_modules/gulp/bin/gulp.js auto"
+  },
+  "author": "mkasem@elm.sa",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.2.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.11"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "bootstrap-v4-rtl": "^4.1.1-0",
+    "gulp": "^3.8.8",
+    "natives": "^1.1.6",
+    "nunjucks": "^3.1.7"
+  }
+}

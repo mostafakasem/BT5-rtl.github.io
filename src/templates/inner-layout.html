@@ -1,0 +1,34 @@
+<!doctype html>
+<!-- <html lang="en" dir="ltr"> -->
+<html lang="ar" dir="rtl">
+
+<head>
+	<meta charset="utf-8" />
+	<title> Bootstrap V.5 template | {% if title %} {{ title }} {% else %} project name | الرئيسية {% endif
+		%} </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#00AF7C" />
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+	<link rel="stylesheet" href="assets/css/style.css">
+	<meta name="author" content="Elm">
+	<meta name="description" content="project name">
+	<meta name="keywords" content="project name">
+	{% block style %}
+	{% endblock %}
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+	{% include 'partials/_header.html' %}
+	<main class="flex-shrink-0 py-3">
+		{% block content %} {% endblock %}
+	</main> 
+	{% include 'partials/_footer.html' %}
+
+	{% block popup %} {% endblock %}
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+	{% block scripts %} {% endblock %} 
+</body>
+
+</html>

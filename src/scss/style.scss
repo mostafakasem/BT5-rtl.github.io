@@ -1,0 +1,19 @@
+$primary: #296FB7 ;   
+ 
+// if the project only support Arabic use the following
+      // @import 'sub/_bootstrap-rtl.min';
+
+// if the project supports English and Arabic in the same time
+     @import "bootstrap/bootstrap"; 
+     @import 'sub/rtl';
+
+// ------------------------------ \-/ -------------------------------- //
+
+@import 'sub/_reset';
+ 
+@import 'sub/_custom';
+
+@import 'sub/_media-queries';
+ 
+
+ 
