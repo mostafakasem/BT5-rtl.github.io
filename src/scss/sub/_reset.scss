@@ -78,6 +78,7 @@ img {
     line-height: 1;
 }
 
+// fix button line height for "din" family
 .btn {
     &:before{
         content: "";
@@ -91,4 +92,9 @@ img {
     &.btn-lg:before{
         height: 34px;
     }
+}
+// background blur effect 
+.blurred{
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(10px);
 }

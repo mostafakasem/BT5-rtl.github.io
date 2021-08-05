@@ -9567,6 +9567,19 @@ img {
 .btn.btn-lg:before, .btn-group-lg > .btn:before {
   height: 34px; }
 
+.blurred {
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(10px); }
+
+/* animation */
+.animate,
+.alert {
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1.0s;
+  animation-duration: 1.0s; }
+
+/* End animation */
 /* Media Queries */
 @media (max-width: 1540px) {
   html, body {
