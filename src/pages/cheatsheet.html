@@ -2,7 +2,17 @@
 {% set title = 'تواصل معنا' %}
 
 {% block style %}
-<link href="assets/css/cheatsheet.css" rel="stylesheet"> 
+<link href="https://getbootstrap.com/docs/5.0/examples/cheatsheet/cheatsheet.rtl.css" rel="stylesheet"> 
+<style>
+    @media (min-width: 1200px) {
+        .cheatsheet {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: 1fr 4fr 1fr;
+            grid-template-rows: auto;
+        }
+    }
+</style>
 {% endblock %}
  
 {% block content %}
