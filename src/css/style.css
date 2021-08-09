@@ -9555,16 +9555,16 @@ img {
   display: inline;
   line-height: 1; }
 
-.btn:before {
+.btn:not(.dropdown-toggle):before {
   content: "";
   display: inline-block;
   vertical-align: middle;
   height: 24px; }
 
-.btn.btn-sm:before, .btn-group-sm > .btn:before {
+.btn:not(.dropdown-toggle).btn-sm:before, .btn-group-sm > .btn:not(.dropdown-toggle):before {
   height: 16px; }
 
-.btn.btn-lg:before, .btn-group-lg > .btn:before {
+.btn:not(.dropdown-toggle).btn-lg:before, .btn-group-lg > .btn:not(.dropdown-toggle):before {
   height: 34px; }
 
 .blurred {

@@ -79,7 +79,7 @@ img {
 }
 
 // fix button line height for "din" family
-.btn {
+.btn:not(.dropdown-toggle) { 
     &:before{
         content: "";
         display: inline-block;
