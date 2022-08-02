@@ -9583,3 +9583,7 @@ img {
 @media (max-width: 1330px) {
   .container {
     max-width: 100%; } }
+
+@media screen and (min-width: 0) and (max-width: 992px) {
+  html, body {
+    font-size: 15px; } }
