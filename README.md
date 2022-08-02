@@ -1,5 +1,5 @@
 # Template-BT.5
-this repo for Bootstrap v5.0.2 template
+this repo for Bootstrap v5.0.2 RTL template
 
 Install
 
