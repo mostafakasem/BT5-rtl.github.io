@@ -1,0 +1,113 @@
+{% extends "inner-layout.html" %}
+{% set title = 'Card list' %}
+
+{% block content %}
+
+<div class="page-layout">
+    <div class="container">
+        {% include 'partials/_breadcrumb.html' %}
+        <div class="templates-inner">
+            <div class="row g-4 g-lg-5 mb-4">
+                <div class="col-md-3"> 
+                    {% include 'partials/_card-sample.html' %}
+                </div>
+                <div class="col-md-3"> 
+                    {% include 'partials/_card-sample.html' %}
+                </div>
+                <div class="col-md-3"> 
+                    {% include 'partials/_card-sample.html' %}
+                </div>
+                <div class="col-md-3"> 
+                    {% include 'partials/_card-sample.html' %}
+                </div> 
+            </div>
+            <hr class="my-5">
+            <div class="row g-4 g-lg-5 mb-4">
+                <div class="col-md-6"> 
+                    {% include 'partials/_card2-sample.html' %} 
+                </div>
+                <div class="col-md-6"> 
+                    {% include 'partials/_card2-sample.html' %} 
+                </div>
+                <div class="col-md-6"> 
+                    {% include 'partials/_card2-sample.html' %} 
+                </div>
+                <div class="col-md-6"> 
+                    {% include 'partials/_card2-sample.html' %} 
+                </div>
+                <div class="col-md-6"> 
+                    {% include 'partials/_card2-sample.html' %} 
+                </div>
+                <div class="col-md-6"> 
+                    {% include 'partials/_card2-sample.html' %} 
+                </div>
+            </div>
+            <nav aria-label="Standard pagination example" class="d-flex justify-content-center">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">«</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">»</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <hr class="my-4">
+            <div class="row g-5 text-center">
+                 <div class="col-md-3">
+                    <a href="payment.html" class="card text-decoration-none shadow mb-4">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="currentcolor" class="text-primary"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em"></text>
+                        </svg> 
+                        <div class="card-body">
+                            <h5 class="card-title"> Payment </h5> 
+                        </div>
+                    </a> 
+                </div>  
+                <div class="col-md-3">
+                    <a href="service.html" class="card text-decoration-none shadow mb-4">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="currentcolor" class="text-primary"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em"></text>
+                        </svg> 
+                        <div class="card-body">
+                            <h5 class="card-title"> Start service </h5> 
+                        </div>
+                    </a> 
+                </div> 
+                <div class="col-md-3">
+                    <a href="card-list.html" class="card text-decoration-none shadow mb-4">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="currentcolor" class="text-primary"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em"></text>
+                        </svg> 
+                        <div class="card-body">
+                            <h5 class="card-title"> Card list </h5> 
+                        </div>
+                    </a> 
+                </div>  
+                <div class="col-md-3">
+                    <a href="contact.html" class="card text-decoration-none shadow mb-4">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="currentcolor" class="text-primary"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em"></text>
+                        </svg> 
+                        <div class="card-body">
+                            <h5 class="card-title"> Contact Us </h5> 
+                        </div>
+                    </a> 
+                </div> 
+            </div>
+        </div> 
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,124 @@
+
+{% extends "inner-layout.html" %} 
+{% set title = 'Birth Certificate Issuance' %} 
+
+{% block content %}
+ 
+  <div class="page-layout">
+    <div class="p-4 bg-light mt-n3 mb-4">
+        <div class="container">
+            {% include 'partials/_breadcrumb.html' %}
+            <div class="row">
+                <div class="col-lg-7 col-xxl-8">
+                    <p class="lead m-0 text-muted">
+                        The service enables parents to register and activate the birth event electronically, and to request delivery of documents via Post, without the need to visit civil status offices.
+                    </p>
+                </div>
+                <div class="col-lg-4 offset-lg-1 col-xxl-3 text-end">
+                    <a href="#" class="btn btn-primary px-xl-5 d-block d-md-inline-block my-3">Start service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container"> 
+        <div class="row">
+            <div class="col-lg-7 col-xxl-8">
+                <h3 class="mb-0 text-primary">Service steps</h3>
+                <ol class="lh-lg p-3 mb-4">
+                    <li>Log in to Absher Portal.</li>
+                    <li>Choose birth registration service.</li>
+                    <li>Enter required personal information.</li>
+                    <li> Record birth registration.</li>
+                    <li>Request documents and delivery.</li>
+                </ol>
+        
+                <h3 class="mb-0 text-primary">Prerequisites </h3>
+                <ul class="lh-lg p-3 mb-4">
+                    <li>The existence of a registered and activated Absher account for the beneficiary.</li>
+                    <li>The existence of a registered national address of the beneficiary.</li>
+                    <li>The existence of an electronic communication received from the Ministry of Health.</li>
+                    <li>More details in: the Manual for using Civil Affairs services.</li>
+                </ul>
+        
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 class="mb-4 text-primary">Customer support </h4> 
+                        <ul class="list-group list-group-flush mb-4">
+                            <li class="list-group-item px-0"> 
+                                Telephone: <span class="bold">000000888888 - 90002000</span> 
+                            </li>
+                            <li class="list-group-item px-0">
+                                Mail: <span class="bold">sample@sample.com</span>
+                            </li> 
+                        </ul> 
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="mb-4 text-primary">Templates and attaments </h4>
+                        <ul class="list-group list-group-flush mb-4">
+                            <li class="list-group-item px-0"> 
+                                <a href="#" target="_blank" class="btn-link" >First template </a> 
+                            </li>
+                            <li class="list-group-item px-0">
+                                <a href="#" target="_blank" class="btn-link" >Second template </a> 
+                            </li> 
+                        </ul> 
+                    </div>
+                </div>
+               
+ 
+            </div>
+            <div class="col-lg-4 offset-lg-1 col-xxl-3">
+                <div class="service-list-card p-4 border rounded shadow sticky-top my-3">
+                    <div class="row mb-4">
+                        <div class="col-3">
+                            <svg id="Layer_1" enable-background="new 0 0 512 512" height="40" viewBox="0 0 512 512" width="40" xmlns="http://www.w3.org/2000/svg"><g><path d="m421 322.658c-8.977 4.681-19.175 7.342-30 7.342-35.898 0-65-29.102-65-65s29.102-65 65-65c10.825 0 21.023 2.661 30 7.342-20.794 10.842-35 32.585-35 57.658s14.206 46.816 35 57.658zm-341 69.383v-272.082c0-55.206 44.644-99.959 99.716-99.959h-60.716c-55.229 0-100 44.771-100 100v272c0 55.228 44.771 100 100 100h60.716c-55.072 0-99.716-44.753-99.716-99.959z" fill="#cee1f2"/><path d="m391 350c-46.869 0-85-38.131-85-85s38.131-85 85-85 85 38.131 85 85-38.131 85-85 85zm0-130c-24.813 0-45 20.187-45 45s20.187 45 45 45 45-20.187 45-45-20.187-45-45-45zm-159 272c0-11.046-8.954-20-20-20h-92.021c-44.1 0-79.979-35.879-79.979-79.979v-272.042c0-44.1 35.879-79.979 79.979-79.979h184.062c44.101 0 79.979 35.879 79.979 79.979 0 11.046 8.954 20 20 20s20-8.954 20-20c.001-66.156-53.822-119.979-119.999-119.979h-184.042c-66.156 0-119.979 53.823-119.979 119.979v272.041c0 66.157 53.823 119.98 119.979 119.98h92.021c11.046 0 20-8.954 20-20zm33-265c0-11.046-8.954-20-20-20h-98c-11.046 0-20 8.954-20 20s8.954 20 20 20h98c11.046 0 20-8.954 20-20zm0 153c0-11.046-8.954-20-20-20h-98c-11.046 0-20 8.954-20 20s8.954 20 20 20h98c11.046 0 20-8.954 20-20zm0-77c0-11.046-8.954-20-20-20h-98c-11.046 0-20 8.954-20 20s8.954 20 20 20h98c11.046 0 20-8.954 20-20z" fill="currentcolor" class="text-primary"/><path d="m492 512c-11.046 0-20-8.954-20-20 0-39.701-32.086-72-71.525-72h-16.949c-39.44 0-71.526 32.299-71.526 72 0 11.046-8.954 20-20 20s-20-8.954-20-20c0-61.757 50.03-112 111.525-112h16.949c61.496 0 111.526 50.243 111.526 112 0 11.046-8.954 20-20 20zm-187-362c0-11.046-8.954-20-20-20h-138c-11.046 0-20 8.954-20 20s8.954 20 20 20h138c11.046 0 20-8.954 20-20z" fill="currentcolor" class="text-danger"/></g></svg>
+
+                        </div>
+                        <div class="col-9">
+                            <div class="bold">Citizen,Resident</div>
+                            <div class="text-black-50 small">Target audience</div> 
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-3">
+                            <svg id="Layer_1" enable-background="new 0 0 512 512" height="40" viewBox="0 0 512 512" width="40" xmlns="http://www.w3.org/2000/svg"><g><path d="m80 392v-272c0-55.229 44.771-100 100-100h-60c-55.229 0-100 44.771-100 100v272c0 55.228 44.771 100 100 100h52.058c-51.515-4.048-92.058-47.445-92.058-100z" fill="#cee1f2"/><path d="m392 512h-272c-66.168 0-120-53.832-120-120v-272c0-66.168 53.832-120 120-120h272c66.168 0 120 53.832 120 120v272c0 66.168-53.832 120-120 120zm-272-472c-44.112 0-80 35.888-80 80v272c0 44.112 35.888 80 80 80h272c44.112 0 80-35.888 80-80v-272c0-44.112-35.888-80-80-80z"  fill="currentcolor" class="text-primary"/><path d="m358.223 330.938-71.245-72.063c.312-9.114-3.646-17.586-9.978-23.23v-135.645c0-11.046-8.954-20-20-20s-20 8.954-20 20v135.645c-21.189 18.855-6.208 54.559 22.419 52.249l70.358 71.167c3.912 3.957 9.066 5.938 14.224 5.938 17.434.192 26.741-21.596 14.222-34.061z" fill="currentcolor" class="text-danger"/></g></svg>
+                        </div>
+                        <div class="col-9"> 
+                            <div class="bold">1.0 Days(s)</div>
+                            <div class="text-black-50 small">Service duration</div> 
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-3">
+                            <svg id="Capa_1" enable-background="new 0 0 512 512" height="40" viewBox="0 0 512 512" width="40" xmlns="http://www.w3.org/2000/svg"><g id="Responsive_Design"><g><path d="m392 212v-152c0-22.091 17.909-40 40-40h-60c-22.091 0-40 17.909-40 40v152c0 22.091 17.909 40 40 40h60c-22.091 0-40-17.909-40-40z" fill="#cee1f2"/></g><path d="m492 392h-23.44c2.22-6.26 3.44-12.989 3.44-20v-40c0-11.046-8.954-20-20-20s-20 8.954-20 20v40c0 11.028-8.972 20-20 20h-312c-11.028 0-20-8.972-20-20v-200c0-11.028 8.972-20 20-20h156c11.046 0 20-8.954 20-20s-8.954-20-20-20h-156c-33.084 0-60 26.916-60 60v200c0 7.011 1.22 13.74 3.44 20h-23.44c-11.046 0-20 8.954-20 20v40c0 33.084 26.916 60 60 60h392c33.084 0 60-26.916 60-60v-40c0-11.046-8.954-20-20-20zm-20 60c0 11.028-8.972 20-20 20h-392c-11.028 0-20-8.972-20-20v-20h432z" fill="currentcolor" class="text-primary"/><g><path d="m452 272h-80c-33.084 0-60-26.916-60-60v-152c0-33.084 26.916-60 60-60h80c33.084 0 60 26.916 60 60v152c0 33.084-26.916 60-60 60zm-80-232c-11.028 0-20 8.972-20 20v152c0 11.028 8.972 20 20 20h80c11.028 0 20-8.972 20-20v-152c0-11.028-8.972-20-20-20z" fill="currentcolor" class="text-primary"/></g><path d="m259.139 210.361c-.237-.263-.459-.535-.712-.788s-.524-.475-.787-.711c-10.8-10.427-25.478-16.862-41.64-16.862h-40c-11.046 0-20 8.954-20 20s8.954 20 20 20h31.715l-85.858 85.858c-7.81 7.811-7.81 20.474 0 28.284s20.474 7.811 28.285 0l85.858-85.857v31.715c0 11.046 8.954 20 20 20s20-8.954 20-20v-40c0-16.161-6.434-30.839-16.861-41.639z" fill="currentcolor" class="text-danger"/><g><circle cx="412" cy="172" fill="currentcolor" class="text-primary" r="20"/></g></g></svg>
+                        </div>
+                        <div class="col-9">
+                            <div class="bold">Mobile apps,  <a href="#">  Portal,  </a></div>
+                            <div class="text-black-50 small">Service channels</div> 
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-3">
+                            <svg id="Capa_1" enable-background="new 0 0 512 512" height="40" viewBox="0 0 512 512" width="40" xmlns="http://www.w3.org/2000/svg"><g><path d="m80 376v-240c0-44.183 35.817-80 80-80h-60c-44.183 0-80 35.817-80 80v240c0 44.183 35.817 80 80 80h60c-44.183 0-80-35.817-80-80z" fill="#cee1f2"/><circle cx="372" cy="256" fill="currentcolor" class="text-danger" r="20"/><g fill="currentcolor" class="text-primary"><path d="m100 476h272c35.587 0 68.774-19.153 86.609-49.985 5.531-9.561 2.264-21.796-7.297-27.327-9.562-5.531-21.796-2.264-27.327 7.297-10.709 18.514-30.629 30.015-51.985 30.015h-272c-33.084 0-60-26.916-60-60v-240c0-33.084 26.916-60 60-60h272c21.356 0 41.276 11.501 51.985 30.015 5.531 9.562 17.765 12.828 27.327 7.297 9.561-5.531 12.828-17.765 7.297-27.327-17.835-30.832-51.022-49.985-86.609-49.985h-272c-55.14 0-100 44.86-100 100v240c0 55.14 44.86 100 100 100z"/><path d="m452 156h-80c-55.14 0-100 44.86-100 100s44.86 100 100 100h80c33.084 0 60-26.916 60-60v-80c0-33.084-26.916-60-60-60zm20 140c0 11.028-8.972 20-20 20h-80c-33.084 0-60-26.916-60-60s26.916-60 60-60h80c11.028 0 20 8.972 20 20z"/></g></g></svg>
+                        </div>
+                        <div class="col-9"> 
+                            <div class="bold">Free</div>
+                            <div class="text-black-50 small">Service cost</div> 
+                        </div>
+                    </div>
+                    
+                    <a href="#" target="_blank" class="btn btn-outline-primary d-block" >Download user  manual</a>
+                       
+                </div>
+            </div>
+        </div> 
+    </div> 
+  </div> 
+
+{% endblock %} 
+ 
+
+{% block scripts %}
+ 
+{% endblock %}

@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node node_modules/gulp/bin/gulp.js auto"
   },
-  "author": "mkasem@elm.sa",
+  "author": "mos450@gmail.com",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.18.2",
