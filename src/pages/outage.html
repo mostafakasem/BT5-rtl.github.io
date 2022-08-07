@@ -1,0 +1,37 @@
+{% extends "inner-layout.html" %}
+{% set title = 'service outage' %}
+
+{% block content %}
+
+<div class="page-layout">
+    <div class="container"> 
+        <div class="page-inner row">
+           <div class="col-xl-9 m-auto outage py-lg-5">
+                <div class="text-center py-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 60 60"><g xmlns="http://www.w3.org/2000/svg" fill="none" fill-rule="evenodd"><path d="M59 43a15.992 15.992 0 11-31.984-.016A15.992 15.992 0 0159 43z" fill="#f1b1b7" data-original="#a4c2f7"></path><path d="M51 29.14a15.915 15.915 0 00-9.514-2.064c8.186.784 14.446 7.646 14.475 15.87.03 8.224-6.18 15.13-14.361 15.973A15.8 15.8 0 0043 59a16 16 0 008-29.86z" fill="#9d121f" data-original="#7facfa"></path><path d="M47.49 58.361l-1.257-11.354a.954.954 0 01.522-.942 7.995 7.995 0 00.266-13.974.685.685 0 00-1.021.6v3.978c0 .33-.165.639-.44.822l-2.01 1.34c-.33.23-.77.23-1.1 0l-2-1.33a1.008 1.008 0 01-.45-.839V32.69a.685.685 0 00-1.018-.6 7.986 7.986 0 00.239 13.952 1 1 0 01.543.982L38.51 58.361z" fill="#ffecee" data-original="#e8edfc"></path><path d="M46.755 46.065a7.995 7.995 0 00.266-13.974.685.685 0 00-1.021.6v1.052a7.967 7.967 0 01-2.245 12.323.954.954 0 00-.522.942l1.257 11.353h3l-1.257-11.354a.954.954 0 01.522-.942z" fill="#ffd1d6" data-original="#cad9fc"></path><path d="M51 13v16.14A16 16 0 0030.51 53H5a4 4 0 01-4-4V13z" fill="#ffecee" data-original="#e8edfc"></path><path d="M41.486 27.076A16.172 16.172 0 0040 27a16 16 0 00-12.49 26h3a16 16 0 0110.976-25.924zM48 13v14.8c1.043.341 2.049.79 3 1.338V13z" fill="#ffd1d6" data-original="#cad9fc"></path><path d="M51 5v8H1V5a4 4 0 014-4h42a4 4 0 014 4z" fill="#f1b1b7" data-original="#a4c2f7"></path><path d="M47 1h-3a4 4 0 014 4v8h3V5a4 4 0 00-4-4z" fill="#9d121f" data-original="#7facfa"></path><circle cx="7" cy="7" fill="#ffecee" r="2" data-original="#e8edfc"></circle><circle cx="15" cy="7" fill="#ffecee" r="2" data-original="#e8edfc"></circle><circle cx="23" cy="7" fill="#ffecee" r="2" data-original="#e8edfc"></circle><rect fill="#ffd1d6" height="4" rx="2" width="12" x="35" y="5" data-original="#cad9fc"></rect><path d="M5 53h3a4 4 0 01-4-4V5a4 4 0 014-4H5a4 4 0 00-4 4v44a4 4 0 004 4z" fill="#fff" data-original="#ffffff"></path><path d="M0 41h2v8H0z" fill="#fff" data-original="#ffffff"></path><g fill="#428dff"><path d="M52 28.6V5a5.006 5.006 0 00-5-5H5a5.006 5.006 0 00-5 5v36a1 1 0 002 0V14h48v13.526A16.967 16.967 0 0028.6 52H5a3 3 0 01-3-3 1 1 0 00-2 0 5.006 5.006 0 005 5h25.062A16.984 16.984 0 1052 28.6zM2 12V5a3 3 0 013-3h42a3 3 0 013 3v7zm37.6 45.6l1.158-10.464A2 2 0 0039.7 45.16a6.952 6.952 0 01-3.633-5.235A7.024 7.024 0 0139 33.263v3.4a2 2 0 00.9 1.673l1.981 1.316a1.957 1.957 0 002.227.013l2.011-1.34c.553-.37.883-.992.881-1.657v-3.405a6.994 6.994 0 01-.716 11.92 1.948 1.948 0 00-1.045 1.934L46.4 57.6a14.535 14.535 0 01-6.8 0zm8.744-.6l-1.12-10.051a8.994 8.994 0 00.3-15.719 1.648 1.648 0 00-1.673 0c-.523.3-.848.856-.851 1.46l.005 3.968L43 38l-2-1.34v-3.97a1.7 1.7 0 00-.851-1.466 1.652 1.652 0 00-1.67 0 9.015 9.015 0 00-4.4 8.95 8.9 8.9 0 004.693 6.738L37.654 57a15 15 0 1110.691 0z" fill-rule="nonzero" fill="#dc3545" data-original="#428dff"></path><path d="M43 50a1 1 0 00-1 1v4a1 1 0 002 0v-4a1 1 0 00-1-1z" fill="#dc3545" data-original="#428dff"></path><circle cx="1" cy="45" r="1" fill="#dc3545" data-original="#428dff"></circle><path d="M7 4a3 3 0 100 6 3 3 0 000-6zm0 4a1 1 0 110-2 1 1 0 010 2zM15 4a3 3 0 100 6 3 3 0 000-6zm0 4a1 1 0 110-2 1 1 0 010 2zM23 4a3 3 0 100 6 3 3 0 000-6zm0 4a1 1 0 110-2 1 1 0 010 2zM45 4h-8a3 3 0 000 6h8a3 3 0 000-6zm0 4h-8a1 1 0 010-2h8a1 1 0 010 2z" fill-rule="nonzero" fill="#dc3545" data-original="#428dff"></path><circle cx="5" cy="17" r="1" fill="#dc3545" data-original="#428dff"></circle><circle cx="5" cy="21" r="1" fill="#dc3545" data-original="#428dff"></circle><circle cx="5" cy="25" r="1" fill="#dc3545" data-original="#428dff"></circle><circle cx="5" cy="29" r="1" fill="#dc3545" data-original="#428dff"></circle><circle cx="5" cy="33" r="1" fill="#dc3545" data-original="#428dff"></circle><circle cx="5" cy="37" r="1" fill="#dc3545" data-original="#428dff"></circle><circle cx="5" cy="41" r="1" fill="#dc3545" data-original="#428dff"></circle><circle cx="5" cy="45" r="1" fill="#dc3545" data-original="#428dff"></circle><circle cx="5" cy="49" r="1" fill="#dc3545" data-original="#428dff"></circle><path d="M10 49V17a1 1 0 00-2 0v32a1 1 0 002 0zM16 16h-3a1 1 0 000 2h3a1 1 0 000-2zM31 16H20a1 1 0 000 2h11a1 1 0 000-2zM13 34h3a1 1 0 000-2h-3a1 1 0 000 2zM27 33a1 1 0 00-1-1h-6a1 1 0 000 2h6a1 1 0 001-1zM13 30h1a1 1 0 000-2h-1a1 1 0 000 2zM29 30a1 1 0 000-2h-2a1 1 0 000 2zM18 30h5a1 1 0 000-2h-5a1 1 0 000 2zM13 50h3a1 1 0 000-2h-3a1 1 0 000 2zM24 48h-4a1 1 0 000 2h4a1 1 0 000-2zM13 46h10a1 1 0 000-2H13a1 1 0 000 2zM14 21a1 1 0 001 1h9a1 1 0 000-2h-9a1 1 0 00-1 1zM43 21a1 1 0 00-1-1H28a1 1 0 000 2h14a1 1 0 001-1zM21 25a1 1 0 00-1-1h-5a1 1 0 000 2h5a1 1 0 001-1zM35 25a1 1 0 00-1-1H24a1 1 0 000 2h10a1 1 0 001-1zM24 36h-9a1 1 0 000 2h9a1 1 0 000-2zM15 40a1 1 0 000 2h8a1 1 0 000-2z" fill="#dc3545" data-original="#428dff"></path></g></g></svg>
+                </div>
+                <div class="row"> 
+                    <div class="col-md-6 text-center text-md-start mb-4">
+                        <h1 class="fs-4 fw-bold mb-3 text-primary"> We’re experiencing a service outage</h1>
+                        <div class="text-muted">
+                            <p class="m-0"> Our team is currently working to restore the service </p>
+                            <p>We apologize for any inconvenience. users may be affected</p> 
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6 text-center text-md-end mb-4"> 
+                        <h1 class="fs-4 fw-bold mb-3 text-primary"> نشهد حاليا انقطاعًا في الخدمة </h1>
+                        <div class="text-muted">
+                            <p class="m-0"> يعمل فريقنا حاليًا على استعادة الخدمة  </p>
+                            <p> نحن نعتذر عن أي شيء غير مناسب. قد يتأثر المستخدمون </p> 
+                        </div>
+                        
+                    </div>
+                
+                </div>
+           </div>
+        </div> 
+    </div>
+</div>
+
+{% endblock %}

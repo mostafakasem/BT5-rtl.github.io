@@ -1,0 +1,47 @@
+{% extends "inner-layout.html" %}
+{% set title = 'OTP' %}
+
+{% block content %}
+
+<div class="page-layout">
+    <div class="container">
+        {% include 'partials/_breadcrumb.html' %}
+        <div class="page-inner"> 
+            <div class="row">
+                <div class="col-lg-5 m-auto"> 
+                    <div class="otp p-4 border">
+                        <h3 class="text-center text-primary mb-4">
+                            Verification code
+                        </h3>
+                        <p class="mb-4 text-muted">Please enter the confirmation code sent to the mobile number ending with **363</p>
+                        <div class="d-flex flex-row ltr mb-4 mx-n2 mx-lg-n3">
+                            <input type="text" maxlength="1" id="first" size="1" autofocus="" class="form-control fs-5 lh-lg mx-2 mx-lg-3 text-center">
+                            <input type="text" maxlength="1" id="second" size="1" class="form-control fs-5 lh-lg mx-2 mx-lg-3 text-center">
+                            <input type="text" maxlength="1" id="third" size="1" class="form-control fs-5 lh-lg mx-2 mx-lg-3 text-center">
+                            <input type="text" maxlength="1" id="fourth" size="1" class="form-control fs-5 lh-lg mx-2 mx-lg-3 text-center">
+                        </div>
+                       
+                        <div class="justify-content-between d-flex align-items-center flex-wrap"> 
+                            <p class="my-3 text-muted">
+                                <span class="d-block fw-bold"> 02:00 </span>
+                                <span class=" small"> Time remaining  </span>
+                            </p> 
+                            <div class="d-flex">
+                                <button type="button" disabled class="btn btn-link me-3 text-decoration-none">
+                                    <span class="mx-2 ">
+                                        <svg  width="15" aria-hidden="true"  data-prefix="fal" data-icon="redo" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512" class="svg-inline--fa fa-redo fa-w-16">  <path  fill="currentcolor" d="M492 8h-10c-6.627 0-12 5.373-12 12v110.625C426.804 57.047 346.761 7.715 255.207 8.001 118.82 8.428 7.787 120.009 8 256.396 8.214 393.181 119.166 504 256 504c63.926 0 122.202-24.187 166.178-63.908 5.113-4.618 5.354-12.561.482-17.433l-7.069-7.069c-4.503-4.503-11.749-4.714-16.482-.454C361.218 449.238 311.065 470 256 470c-117.744 0-214-95.331-214-214 0-117.744 95.331-214 214-214 82.862 0 154.737 47.077 190.289 116H332c-6.627 0-12 5.373-12 12v10c0 6.627 5.373 12 12 12h160c6.627 0 12-5.373 12-12V20c0-6.627-5.373-12-12-12z"> </path> </svg>
+                                    </span>
+                                    <span class="small">  Resend code </span>
+                                </button>
+                                <a href="/" class="btn px-4  btn-primary">Verify</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+
+{% endblock %}

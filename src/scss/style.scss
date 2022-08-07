@@ -1,12 +1,19 @@
  
-$primary: #5F4B8B; 
+$primary: #0f6e7d; 
+// $primary: #0c8a9d; 
+// $primary: #5F4B8B; 
+$enable-negative-margins: true;
+:root{
+      --bs-primary-rgb: 0,0,0;
+}
 
-// if the project only support Arabic use the following (but you can not customize bootstrap variables)
-      // @import 'sub/_bootstrap-rtl.min';
+// Bootstrap  v5.2.0
 
-// if the project supports English and Arabic in the same time
-     @import "bootstrap/bootstrap"; 
-     @import 'sub/rtl';
+// @import "bootstrap/bootstrap";  // local version you can control imported components
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import 'sub/rtl';
+
+
 
 // ------------------------------ \-/ -------------------------------- //
 

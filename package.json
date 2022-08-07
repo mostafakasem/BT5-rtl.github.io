@@ -22,8 +22,7 @@
     "gulp-watch": "^4.3.11"
   },
   "dependencies": {
-    "bootstrap": "^4.6.0",
-    "bootstrap-v4-rtl": "^4.1.1-0",
+    "bootstrap": "^5.2.0",
     "gulp": "^3.8.8",
     "natives": "^1.1.6",
     "nunjucks": "^3.1.7"

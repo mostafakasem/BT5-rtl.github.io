@@ -24,7 +24,10 @@ html {
 :root {
     --bs-font-sans-serif: 'din', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
+body{ 
+    text-align: left;
+    direction: ltr;
+}
 a,
 input,
 button,
