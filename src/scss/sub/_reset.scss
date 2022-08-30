@@ -101,3 +101,24 @@ img {
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(10px);
 }
+.hover-shadow{
+    transition: all .5s ease-in-out;
+    &:hover,
+    &:focus{
+        @extend .shadow;
+    }
+}
+.hover-x-10{
+    transition: all .5s ease-in-out;
+    &:hover,
+    &:focus{
+        transform: translateX(-10px);
+    }
+}
+.hover-y-10{
+    transition: all .5s ease-in-out;
+    &:hover,
+    &:focus{
+        transform: translateY(-10px);
+    }
+} 

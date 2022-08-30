@@ -1,10 +1,9 @@
  
-$primary: #0f6e7d; 
-// $primary: #0c8a9d; 
-// $primary: #5F4B8B; 
+$primary: #0f6e7d;  
 $enable-negative-margins: true;
 :root{
-      --bs-primary-rgb: 0,0,0;
+      --bs-primary-rgb: $primary;
+      --primary: $primary;
 }
 
 // Bootstrap  v5.2.0
@@ -12,8 +11,6 @@ $enable-negative-margins: true;
 // @import "bootstrap/bootstrap";  // local version you can control imported components
 @import "./node_modules/bootstrap/scss/bootstrap";
 @import 'sub/rtl';
-
-
 
 // ------------------------------ \-/ -------------------------------- //
 

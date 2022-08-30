@@ -2,12 +2,97 @@
 {% set title = 'FAQ' %}
 
 {% block content %}
+<style>
+    .mk-faq .cr-cont-blk {
+        position: relative;
+        overflow: hidden;
+        padding: .5rem 0;
+    }
 
+    .mk-faq .cr-cont-blk:focus .panel-head, .mk-faq .cr-cont-blk:hover .panel-head {
+        background: #f9f9f9;
+    }
+
+    .mk-faq .cr-cont-blk .panel-body {
+        display: none;
+        padding: 1rem 0;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 1.0s;
+        animation-duration: 1.0s;
+        -webkit-animation-name: fadeInRight;
+        animation-name: fadeInRight;
+    }
+
+    [dir="ltr"] .mk-faq .cr-cont-blk .panel-body {
+        -webkit-animation-name: fadeInLeft;
+        animation-name: fadeInLeft;
+    }
+
+    .mk-faq .cr-cont-blk .panel-body p {
+        margin: 0;
+        line-height: 1.5;
+    }
+
+    .mk-faq .cr-cont-blk .panel-head {
+        font-size: 1.1rem;
+        font-weight: 300;
+        color: #747474;
+        line-height: 1.5;
+        margin: 0;
+        position: relative;
+        padding: 10px 0;
+        transition: all .5s ease-in-out;
+        font-weight: 600;
+        padding-inline-end: 3rem;
+    }
+
+    .mk-faq .cr-cont-blk .panel-head:after {
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 15px;
+        left: 16px;
+        display: block;
+        content: "";
+        border-left: 2px solid #555;
+        border-bottom: 2px solid #555;
+        transition: all .5s ease;
+        transform: rotate(-45deg);
+    }
+
+    [dir="ltr"] .mk-faq .cr-cont-blk .panel-head:after {
+        left: auto;
+        right: 16px;
+    }
+
+    .mk-faq .cr-cont-blk input[type=checkbox] {
+        position: absolute;
+        cursor: pointer;
+        width: 100%;
+        height: 40px;
+        z-index: 1;
+        opacity: 0;
+    }
+
+    .mk-faq .cr-cont-blk input[type=checkbox]:checked ~ .panel-head {
+        color: var(--bs-primary);
+    }
+
+    .mk-faq .cr-cont-blk input[type=checkbox]:checked ~ .panel-head:after {
+        transform: rotate(135deg) translateY(-5px);
+    }
+
+    .mk-faq .cr-cont-blk input[type=checkbox]:checked ~ .panel-body {
+        display: block;
+    }
+</style>
 <div class="page-layout">
     <div class="container">
         {% include 'partials/_breadcrumb.html' %}
         <div class="page-inner">
             <div class="faq-page"> 
+                <h3 class="fw-bold mb-4 text-dark">With bootstrap js</h3>
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
@@ -54,7 +139,43 @@
                         </div>
                     </div>  
                 </div>  
-            
+                <hr class="my-5">
+                <h3 class="fw-bold mb-4 text-dark">With css only</h3>
+                <!-- use the file faq.scss for scss style -->
+                <div class="mk-faq"> 
+                    <div class="cr-cont-blk fq-block  border-bottom">
+                        <input type="checkbox" checked="">
+                        <div class="h4 panel-head" > Question Item #1 </div>
+                        <div class="panel-body">
+                            <p class="text-muted"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
+                        </div>
+                    </div>
+    
+                    <div class="cr-cont-blk fq-block  border-bottom">
+                        <input type="checkbox">
+                        <div class="h4 panel-head" > Question Item #2 </div>
+                        <div class="panel-body">
+                            <p class="text-muted"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
+                        </div>
+                    </div>
+    
+                    <div class="cr-cont-blk fq-block  border-bottom">
+                        <input type="checkbox">
+                        <div class="h4 panel-head" > Question Item #3 </div>
+                        <div class="panel-body">
+                            <p class="text-muted"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
+                        </div>
+                    </div>
+    
+                    <div class="cr-cont-blk fq-block  border-bottom">
+                        <input type="checkbox">
+                        <div class="h4 panel-head" > Question Item #4 </div>
+                        <div class="panel-body">
+                            <p class="text-muted"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
+                        </div>
+                    </div>
+                  
+                </div>
             </div>
         </div> 
     </div>

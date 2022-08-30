@@ -1,0 +1,76 @@
+.mk-faq{  
+    .cr-cont-blk {
+        position: relative;
+        overflow: hidden;
+        padding: .5rem 0;
+        &:focus,
+        &:hover{ 
+            .panel-head{
+                background: #f9f9f9;
+            }
+        }
+        .panel-body {
+            display: none; 
+            padding:  1rem 0;
+            -webkit-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-duration: 1.0s; animation-duration: 1.0s ; 
+            -webkit-animation-name: fadeInRight; 
+            animation-name: fadeInRight;
+            [dir="ltr"] &{
+                -webkit-animation-name: fadeInLeft; 
+                animation-name: fadeInLeft;
+            }
+            p{
+                margin: 0;
+                line-height: 1.5; 
+                // font-size: 1.1rem;
+            }
+        }
+        .panel-head { 
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: #747474;
+            line-height: 1.5; 
+            margin: 0; 
+            position: relative;
+            padding: 10px 0;
+            transition: all .5s ease-in-out ; 
+            font-weight: 600;
+            padding-inline-end:3rem;
+            &:after {
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                top: 15px;
+                left: 16px;
+                display: block;
+                content: "";
+                border-left: 2px solid #555;
+                border-bottom: 2px solid #555;
+                transition: all .5s ease;
+                transform: rotate(-45deg);
+                [dir="ltr"] &{ 
+                    left: auto;
+                    right: 16px;
+                }
+            }
+        }
+        input[type=checkbox] {
+            position: absolute;
+            cursor: pointer;
+            width: 100%;
+            height: 40px;
+            z-index: 1;
+            opacity: 0;
+            &:checked~.panel-head {
+                color: var(--bs-primary);
+                &:after  {
+                    transform: rotate(135deg) translateY(-5px); 
+                }
+            }
+    
+            &:checked~.panel-body {
+                display: block
+            }
+        }
+    }
+}

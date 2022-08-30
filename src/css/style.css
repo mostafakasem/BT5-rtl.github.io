@@ -1,5 +1,6 @@
 :root {
-  --bs-primary-rgb: 0,0,0; }
+  --bs-primary-rgb: $primary;
+  --primary: $primary; }
 
 /*!
    * Bootstrap  v5.2.0 (https://getbootstrap.com/)
@@ -5679,7 +5680,7 @@ textarea.form-control-lg {
 .d-none {
   display: none !important; }
 
-.shadow {
+.shadow, .hover-shadow:hover, .hover-shadow:focus {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
 
 .shadow-sm {
@@ -10440,6 +10441,19 @@ img {
 .blurred {
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(10px); }
+
+.hover-shadow {
+  transition: all .5s ease-in-out; }
+
+.hover-x-10 {
+  transition: all .5s ease-in-out; }
+  .hover-x-10:hover, .hover-x-10:focus {
+    transform: translateX(-10px); }
+
+.hover-y-10 {
+  transition: all .5s ease-in-out; }
+  .hover-y-10:hover, .hover-y-10:focus {
+    transform: translateY(-10px); }
 
 /* animation */
 .animate,
