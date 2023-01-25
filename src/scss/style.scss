@@ -1,26 +1,24 @@
- 
-$primary: #0f6e7d;  
+// control theme colors from here - you can add more variables from "_variables.scss"
+$primary: #0000D7;
 $enable-negative-margins: true;
+
 :root{
-      --bs-primary-rgb: $primary;
-      --primary: $primary;
+      --bs-primary-rgb: 0, 0, 215 !important; 
+      --bs-primary-text: #0000D7 !important;
+      --bs-body-font-family: 'din' !important;
 }
 
-// Bootstrap  v5.2.0
+@import "bootstrap/bootstrap";  // v5.3.0 // local version so you can control imported components - please remove any unused components u don't need. 
 
-// @import "bootstrap/bootstrap";  // local version you can control imported components
-@import "./node_modules/bootstrap/scss/bootstrap";
-@import 'sub/rtl';
+@import 'sub/rtl'; // to enable two directions support - remove this file if u use english only
 
-// ------------------------------ \-/ -------------------------------- //
+@import 'sub/_reset'; // reset css with some useful extra style 
 
-@import 'sub/_reset';
-
-@import 'sub/_animation';
+@import 'sub/_animation'; // basic animation style
  
-@import 'sub/_custom';
+@import 'sub/_custom'; // add your custom style here
 
-@import 'sub/_media-queries';
+@import 'sub/_media-queries'; // empty media queries 
  
 
  

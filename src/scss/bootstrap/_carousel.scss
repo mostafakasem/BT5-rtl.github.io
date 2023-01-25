@@ -31,7 +31,7 @@
   display: none;
   float: left;
   width: 100%;
-  margin-right: -100%;
+  margin-inline-end: -100%;
   backface-visibility: hidden;
   @include transition($carousel-transition);
 }
@@ -42,7 +42,6 @@
   display: block;
 }
 
-/* rtl:begin:ignore */
 .carousel-item-next:not(.carousel-item-start),
 .active.carousel-item-end {
   transform: translateX(100%);
@@ -52,8 +51,6 @@
 .active.carousel-item-start {
   transform: translateX(-100%);
 }
-
-/* rtl:end:ignore */
 
 
 //
@@ -165,9 +162,9 @@
   justify-content: center;
   padding: 0;
   // Use the .carousel-control's width as margin so we don't overlay those
-  margin-right: $carousel-control-width;
+  margin-inline-end: $carousel-control-width;
   margin-bottom: 1rem;
-  margin-left: $carousel-control-width;
+  margin-inline-start: $carousel-control-width;
   list-style: none;
 
   [data-bs-target] {
@@ -176,8 +173,8 @@
     width: $carousel-indicator-width;
     height: $carousel-indicator-height;
     padding: 0;
-    margin-right: $carousel-indicator-spacer;
-    margin-left: $carousel-indicator-spacer;
+    margin-inline-end: $carousel-indicator-spacer;
+    margin-inline-start: $carousel-indicator-spacer;
     text-indent: -999px;
     cursor: pointer;
     background-color: $carousel-indicator-active-bg;
@@ -213,7 +210,7 @@
 
 // Dark mode carousel
 
-.carousel-dark {
+@mixin carousel-dark() {
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     filter: $carousel-dark-control-icon-filter;
@@ -225,5 +222,17 @@
 
   .carousel-caption {
     color: $carousel-dark-caption-color;
+  }
+}
+
+.carousel-dark {
+  @include carousel-dark();
+}
+
+@if $enable-dark-mode {
+  @include color-mode(dark) {
+    .carousel {
+      @include carousel-dark();
+    }
   }
 }

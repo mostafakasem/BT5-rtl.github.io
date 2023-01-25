@@ -21,7 +21,6 @@
         cursor: pointer;
         transition: all .5s ease-in-out;
         min-height: 140px;
-        background: #fff;
         flex-direction: column;
         overflow: hidden;
     }
@@ -32,85 +31,83 @@
         display: none;
     }
 </style>
-    <div class="page-layout">
+    <div class="page-layout py-3">
         <div class="container"> 
             {% include 'partials/_breadcrumb.html' %} 
-            <section class="mb-5"> 
-                <label class="form-label">Select payment method</label>
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="payment-block mb-3 p-4 bg-light">  
-                            <div>
-                                <input type="radio" name="radios" class="form-check-input" id="exampleRadio4">
-                                <label class="form-check-label" for="exampleRadio4">
-                                    <span> <svg width="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255.283 170.189"><g transform="translate(0 -85.333)"><path d="M26.592,85.333h202.1a26.592,26.592,0,0,1,26.592,26.592V228.93a26.592,26.592,0,0,1-26.592,26.592H26.592A26.591,26.591,0,0,1,0,228.93v-117A26.592,26.592,0,0,1,26.592,85.333Z" fill="#2196f3"/><path d="M0,149.333H255.283V191.88H0Z" transform="translate(0 -32.09)" fill="#455a64"/><path d="M111.866,309.3H69.319a5.319,5.319,0,1,1,0-10.637h42.547a5.319,5.319,0,0,1,0,10.637Zm31.91,21.274H69.319a5.319,5.319,0,1,1,0-10.637h74.457a5.319,5.319,0,1,1,0,10.637Z" transform="translate(-32.09 -106.965)" fill="#fafafa"/></g></svg> </span>
-                                    <p class="mt-2 mb-0 bold">Credit card</p>
-                                </label>
-                            </div>
-                            <div>
-                                <input type="radio" name="radios" class="form-check-input" id="exampleRadio8">
-                                <label class="form-check-label" for="exampleRadio8">
-                                    <span> <svg width="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255.283 159.552"><path d="M253.726 1.558A5.3 5.3 0 0 0 249.965 0H5.318A5.319 5.319 0 0 0 0 5.318v148.916a5.318 5.318 0 0 0 5.318 5.318h244.647a5.319 5.319 0 0 0 5.318-5.318V5.318a5.3 5.3 0 0 0-1.557-3.76Z" fill="#2db124"/><path d="M228.692 42.548a15.973 15.973 0 0 1-15.955-15.955 5.319 5.319 0 0 0-5.319-5.319H47.866a5.318 5.318 0 0 0-5.318 5.318 15.973 15.973 0 0 1-15.955 15.955 5.318 5.318 0 0 0-5.319 5.319v63.821a5.319 5.319 0 0 0 5.318 5.318 15.973 15.973 0 0 1 15.955 15.955 5.319 5.319 0 0 0 5.319 5.314h159.552a5.319 5.319 0 0 0 5.318-5.318 15.973 15.973 0 0 1 15.955-15.955 5.319 5.319 0 0 0 5.318-5.318V47.866a5.319 5.319 0 0 0-5.317-5.318Z" fill="#25931e"/><path d="M202.633 31.91H52.65a26.677 26.677 0 0 1-20.74 20.74v54.252a26.677 26.677 0 0 1 20.74 20.739h149.983a26.675 26.675 0 0 1 20.739-20.739V52.65a26.676 26.676 0 0 1-20.739-20.74Z" fill="#008300"/><g transform="translate(69.139 21.274)" fill="#2db124"><path d="M111.687 47.866a5.319 5.319 0 0 0-5.318 5.318c0 22.691-17.7 32.317-19.278 34.139a5.319 5.319 0 1 0 6.645 8.306c1.5-1.763 23.27-14.2 23.27-42.446a5.319 5.319 0 0 0-5.319-5.317ZM90.413 47.866a5.319 5.319 0 1 0-10.637 0v5.318a10.637 10.637 0 1 1-21.274 0V5.318a5.319 5.319 0 0 0-10.637 0v47.866a21.274 21.274 0 0 0 42.547 0ZM31.91 21.274a5.318 5.318 0 0 0-5.318 5.318v50.525a7.978 7.978 0 0 1-15.955 0v-7.978a5.319 5.319 0 1 0-10.637 0v7.978a18.614 18.614 0 0 0 37.229 0V26.592a5.318 5.318 0 0 0-5.319-5.318Z"/><circle cx="5.5" cy="5.5" r="5.5" transform="translate(52.861 79.726)"/><circle cx="5.5" cy="5.5" r="5.5" transform="translate(68.861 79.726)"/></g></svg></span>
-                                    <p class="mt-2 mb-0">Cash</p>
-                                </label>
-                            </div>  
-                            <div>
-                                <input type="radio" name="radios" class="form-check-input" id="exampleRadio10">
-                                <label class="form-check-label" for="exampleRadio10">
-                                    <span> <svg width="120" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 799.2 204.9"><path d="M323.4 0h-40.9c-19.3 53.6-51.8 142.6-69.7 191.4a77.129 77.129 0 0 1-6.7 13.5h28.3a22.368 22.368 0 0 0 18.3-11.6 19.123 19.123 0 0 0 1.6-3.2l17.1-46.7c21.2-58.1 49.9-137 52-143.4" fill="#929497"/><path d="M758.1 102.5 741 149.3a22.854 22.854 0 0 1-19.8 14.6h-28.3a73.369 73.369 0 0 0 7.2-14.6l17.1-46.8h-41l-17 46.8a22.974 22.974 0 0 1-19.8 14.6h-28.5a79.221 79.221 0 0 0 7.2-14.6l17.1-46.8h-41l-17 46.8a22.854 22.854 0 0 1-19.8 14.6h-131a71.413 71.413 0 0 0 7.3-14.3l4.3-12c11.2-30.8-4.7-55.6-35.4-55.6H356l-14.9 40.9h46.8c8.1 0 12.3 6.5 9.3 14.6l-4.5 12a22.532 22.532 0 0 1-19.7 14.3h-67.4l-14.9 41h415.9c30.8 0 64.2-24.7 75.4-55.3l17.2-47.1-41.1.1ZM108.3 204.9H0l14.9-41h108.4a23.252 23.252 0 0 0 20-14.6l4.2-11.6c2.9-8.1-1.2-14.6-9.3-14.6H70.9l14.9-41H153c30.8 0 46.5 24.9 35.4 55.6l-4.2 11.6c-11.2 30.8-45.2 55.5-75.9 55.6" fill="#ed7624"/></svg> </span>
-                                    <p class="mt-3 mb-0">Sadad</p>
-                                </label>
-                            </div>
-                        </div> 
-                    </div>
-                </div> 
+            <section class="mb-4"> 
+                <label class="form-label">Select payment method</label> 
+                <div class="bg-body-secondary mb-3 p-4"> 
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="payment-block">  
+                                <div>
+                                    <input type="radio" name="radios" class="form-check-input" id="exampleRadio4">
+                                    <label class="form-check-label bg-white bg-gradient" for="exampleRadio4">
+                                        <span> <svg width="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255.283 170.189"><g transform="translate(0 -85.333)"><path d="M26.592,85.333h202.1a26.592,26.592,0,0,1,26.592,26.592V228.93a26.592,26.592,0,0,1-26.592,26.592H26.592A26.591,26.591,0,0,1,0,228.93v-117A26.592,26.592,0,0,1,26.592,85.333Z" fill="#2196f3"/><path d="M0,149.333H255.283V191.88H0Z" transform="translate(0 -32.09)" fill="#455a64"/><path d="M111.866,309.3H69.319a5.319,5.319,0,1,1,0-10.637h42.547a5.319,5.319,0,0,1,0,10.637Zm31.91,21.274H69.319a5.319,5.319,0,1,1,0-10.637h74.457a5.319,5.319,0,1,1,0,10.637Z" transform="translate(-32.09 -106.965)" fill="#fafafa"/></g></svg> </span>
+                                        <p class="mt-2 mb-0 bold">Credit card</p>
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="radios" class="form-check-input" id="exampleRadio8">
+                                    <label class="form-check-label bg-white bg-gradient" for="exampleRadio8">
+                                        <span> <svg width="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255.283 159.552"><path d="M253.726 1.558A5.3 5.3 0 0 0 249.965 0H5.318A5.319 5.319 0 0 0 0 5.318v148.916a5.318 5.318 0 0 0 5.318 5.318h244.647a5.319 5.319 0 0 0 5.318-5.318V5.318a5.3 5.3 0 0 0-1.557-3.76Z" fill="#2db124"/><path d="M228.692 42.548a15.973 15.973 0 0 1-15.955-15.955 5.319 5.319 0 0 0-5.319-5.319H47.866a5.318 5.318 0 0 0-5.318 5.318 15.973 15.973 0 0 1-15.955 15.955 5.318 5.318 0 0 0-5.319 5.319v63.821a5.319 5.319 0 0 0 5.318 5.318 15.973 15.973 0 0 1 15.955 15.955 5.319 5.319 0 0 0 5.319 5.314h159.552a5.319 5.319 0 0 0 5.318-5.318 15.973 15.973 0 0 1 15.955-15.955 5.319 5.319 0 0 0 5.318-5.318V47.866a5.319 5.319 0 0 0-5.317-5.318Z" fill="#25931e"/><path d="M202.633 31.91H52.65a26.677 26.677 0 0 1-20.74 20.74v54.252a26.677 26.677 0 0 1 20.74 20.739h149.983a26.675 26.675 0 0 1 20.739-20.739V52.65a26.676 26.676 0 0 1-20.739-20.74Z" fill="#008300"/><g transform="translate(69.139 21.274)" fill="#2db124"><path d="M111.687 47.866a5.319 5.319 0 0 0-5.318 5.318c0 22.691-17.7 32.317-19.278 34.139a5.319 5.319 0 1 0 6.645 8.306c1.5-1.763 23.27-14.2 23.27-42.446a5.319 5.319 0 0 0-5.319-5.317ZM90.413 47.866a5.319 5.319 0 1 0-10.637 0v5.318a10.637 10.637 0 1 1-21.274 0V5.318a5.319 5.319 0 0 0-10.637 0v47.866a21.274 21.274 0 0 0 42.547 0ZM31.91 21.274a5.318 5.318 0 0 0-5.318 5.318v50.525a7.978 7.978 0 0 1-15.955 0v-7.978a5.319 5.319 0 1 0-10.637 0v7.978a18.614 18.614 0 0 0 37.229 0V26.592a5.318 5.318 0 0 0-5.319-5.318Z"/><circle cx="5.5" cy="5.5" r="5.5" transform="translate(52.861 79.726)"/><circle cx="5.5" cy="5.5" r="5.5" transform="translate(68.861 79.726)"/></g></svg></span>
+                                        <p class="mt-2 mb-0">Cash</p>
+                                    </label>
+                                </div>  
+                                <div>
+                                    <input type="radio" name="radios" class="form-check-input" id="exampleRadio10">
+                                    <label class="form-check-label bg-white bg-gradient" for="exampleRadio10">
+                                        <span> <svg width="120" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 799.2 204.9"><path d="M323.4 0h-40.9c-19.3 53.6-51.8 142.6-69.7 191.4a77.129 77.129 0 0 1-6.7 13.5h28.3a22.368 22.368 0 0 0 18.3-11.6 19.123 19.123 0 0 0 1.6-3.2l17.1-46.7c21.2-58.1 49.9-137 52-143.4" fill="#929497"/><path d="M758.1 102.5 741 149.3a22.854 22.854 0 0 1-19.8 14.6h-28.3a73.369 73.369 0 0 0 7.2-14.6l17.1-46.8h-41l-17 46.8a22.974 22.974 0 0 1-19.8 14.6h-28.5a79.221 79.221 0 0 0 7.2-14.6l17.1-46.8h-41l-17 46.8a22.854 22.854 0 0 1-19.8 14.6h-131a71.413 71.413 0 0 0 7.3-14.3l4.3-12c11.2-30.8-4.7-55.6-35.4-55.6H356l-14.9 40.9h46.8c8.1 0 12.3 6.5 9.3 14.6l-4.5 12a22.532 22.532 0 0 1-19.7 14.3h-67.4l-14.9 41h415.9c30.8 0 64.2-24.7 75.4-55.3l17.2-47.1-41.1.1ZM108.3 204.9H0l14.9-41h108.4a23.252 23.252 0 0 0 20-14.6l4.2-11.6c2.9-8.1-1.2-14.6-9.3-14.6H70.9l14.9-41H153c30.8 0 46.5 24.9 35.4 55.6l-4.2 11.6c-11.2 30.8-45.2 55.5-75.9 55.6" fill="#ed7624"/></svg> </span>
+                                        <p class="mt-3 mb-0">Sadad</p>
+                                    </label>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>  
+                </div>
             </section>
 
             <section class="mb-5"> 
                 <label class="form-label">Select Card type</label>
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="payment-block mb-3 p-4 bg-light"> 
-                            <div>
-                                <input type="radio" name="radios" class="form-check-input" id="exampleRadio1">
-                                <label class="form-check-label" for="exampleRadio1">
-                                    <img height="30" src="https://cdn.visa.com/v2/assets/images/logos/visa/blue/logo.png" alt="payment visa">
-                                </label>
-                            </div>
-                            <div>
-                                <input type="radio" name="radios" class="form-check-input" id="exampleRadio2">
-                                <label class="form-check-label" for="exampleRadio2">
-                                    <!-- <img height="60" src="https://www.mastercard.com.sa/etc/designs/mccom/en-sa/jcr:content/global/logo.img.png/1555589530895.png" alt="payment master"> -->
-                                    <img height="60" src="assets/images/master.svg" alt="payment master">
-                                </label>
-                            </div>
-                            <!-- <div>
-                                <input type="radio" name="radios" class="form-check-input" id="exampleRadio3">
-                                <label class="form-check-label" for="exampleRadio3">
-                                    <span> <svg xmlns="http://www.w3.org/2000/svg" width="120" viewBox="0 0 799.2 204.9"><path d="M323.4 0h-40.9c-19.3 53.6-51.8 142.6-69.7 191.4a77.129 77.129 0 0 1-6.7 13.5h28.3a22.368 22.368 0 0 0 18.3-11.6 19.123 19.123 0 0 0 1.6-3.2l17.1-46.7c21.2-58.1 49.9-137 52-143.4" fill="#929497"/><path d="M758.1 102.5 741 149.3a22.854 22.854 0 0 1-19.8 14.6h-28.3a73.369 73.369 0 0 0 7.2-14.6l17.1-46.8h-41l-17 46.8a22.974 22.974 0 0 1-19.8 14.6h-28.5a79.221 79.221 0 0 0 7.2-14.6l17.1-46.8h-41l-17 46.8a22.854 22.854 0 0 1-19.8 14.6h-131a71.413 71.413 0 0 0 7.3-14.3l4.3-12c11.2-30.8-4.7-55.6-35.4-55.6H356l-14.9 40.9h46.8c8.1 0 12.3 6.5 9.3 14.6l-4.5 12a22.532 22.532 0 0 1-19.7 14.3h-67.4l-14.9 41h415.9c30.8 0 64.2-24.7 75.4-55.3l17.2-47.1-41.1.1ZM108.3 204.9H0l14.9-41h108.4a23.252 23.252 0 0 0 20-14.6l4.2-11.6c2.9-8.1-1.2-14.6-9.3-14.6H70.9l14.9-41H153c30.8 0 46.5 24.9 35.4 55.6l-4.2 11.6c-11.2 30.8-45.2 55.5-75.9 55.6" fill="#ed7624"/></svg> </span>
-                                </label>
-                            </div> -->
-                            <div>
-                                <input type="radio" name="radios" class="form-check-input" id="exampleRadio6">
-                                <label class="form-check-label" for="exampleRadio6">
-                                    <img height="40" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Mada_Logo.svg/1200px-Mada_Logo.svg.png" alt="payment mada">
-                                </label>
-                            </div>   
-                            <div>
-                                <input type="radio" name="radios" class="form-check-input" id="exampleRadio5">
-                                <label class="form-check-label" for="exampleRadio5">
-                                    <img height="60" src="https://www.americanexpress.com.sa/sites/default/files/Amex_Logo_0.png" alt="payment american express">
-                                </label>
-                            </div>   
-                        </div>  
+                <div class=" bg-body-secondary mb-3 p-4"> 
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="payment-block"> 
+                                <div>
+                                    <input type="radio" name="radios" class="form-check-input" id="exampleRadio1">
+                                    <label class="form-check-label bg-white bg-gradient" for="exampleRadio1">
+                                        <img height="30" src="assets/images/visa.png" alt="payment visa">
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="radios" class="form-check-input" id="exampleRadio2">
+                                    <label class="form-check-label bg-white bg-gradient" for="exampleRadio2">
+                                        <!-- <img height="60" src="https://www.mastercard.com.sa/etc/designs/mccom/en-sa/jcr:content/global/logo.img.png/1555589530895.png" alt="payment master"> -->
+                                        <img height="60" src="assets/images/master.svg" alt="payment master">
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="radios" class="form-check-input" id="exampleRadio6">
+                                    <label class="form-check-label bg-white bg-gradient" for="exampleRadio6">
+                                        <img height="40" src="assets/images/mada.png" alt="payment mada">
+                                    </label>
+                                </div>   
+                                <div>
+                                    <input type="radio" name="radios" class="form-check-input" id="exampleRadio5">
+                                    <label class="form-check-label bg-white bg-gradient" for="exampleRadio5">
+                                        <img width="100" src="assets/images/ae.png" alt="payment american express">
+                                    </label>
+                                </div>   
+                            </div>  
+                        </div>
                     </div>
                 </div>
             </section>
        
             <section class="mb-5">
                 <div class="row">
-                    <div class="col-md-8 col-lg-5 ">
-                        <div class="p-4 bg-light">
+                    <div class="col-md-10 col-lg-6">
+                        <div class="p-4 bg-body-secondary ">
                             <div class="d-flex justify-content-between align-items-center">
                                 <h3 class="fs-5 fs-5 m-0"> Pay with visa card </h3>  
                                 <span> <svg xmlns="http://www.w3.org/2000/svg" width="50" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><path style="fill:#2196f3" d="M53.333 85.333h405.333c29.455 0 53.333 23.878 53.333 53.333v234.667c0 29.455-23.878 53.333-53.333 53.333H53.333C23.878 426.667 0 402.789 0 373.333V138.667c0-29.456 23.878-53.334 53.333-53.334z"/><path style="fill:#455a64" d="M0 149.333h512v85.333H0z"/><path style="fill:#fafafa" d="M160 320H74.667C68.776 320 64 315.224 64 309.333s4.776-10.667 10.667-10.667H160c5.891 0 10.667 4.776 10.667 10.667S165.891 320 160 320zM224 362.667H74.667C68.776 362.667 64 357.891 64 352s4.776-10.667 10.667-10.667H224c5.891 0 10.667 4.776 10.667 10.667s-4.776 10.667-10.667 10.667z"/></svg> </span>

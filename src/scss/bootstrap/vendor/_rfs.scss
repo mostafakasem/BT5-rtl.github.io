@@ -321,16 +321,16 @@ $rfs-mq-property-height: if($rfs-mode == max-media-query, max-height, min-height
   @include rfs($value, padding-top);
 }
 
-@mixin padding-right($value) {
-  @include rfs($value, padding-right);
+@mixin padding-inline-end($value) {
+  @include rfs($value, padding-inline-end);
 }
 
 @mixin padding-bottom($value) {
   @include rfs($value, padding-bottom);
 }
 
-@mixin padding-left($value) {
-  @include rfs($value, padding-left);
+@mixin padding-inline-start($value) {
+  @include rfs($value, padding-inline-start);
 }
 
 @mixin margin($value) {
@@ -349,6 +349,6 @@ $rfs-mq-property-height: if($rfs-mode == max-media-query, max-height, min-height
   @include rfs($value, margin-bottom);
 }
 
-@mixin margin-left($value) {
-  @include rfs($value, margin-left);
+@mixin margin-inline-start($value) {
+  @include rfs($value, margin-inline-start);
 }

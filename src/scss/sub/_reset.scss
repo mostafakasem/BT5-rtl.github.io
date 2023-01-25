@@ -1,5 +1,5 @@
 
- // Reset
+// Reset
 html { 
     position: relative; 
     min-height: 100%; 
@@ -12,23 +12,15 @@ html {
             url('../fonts/DINNext.ttf') format('truetype'),
             url('../fonts/DINNext.woff') format('woff'),
             url('../fonts/DINNext.svg#DINNext') format('svg'); font-weight: normal; font-style: normal;
-    }
+}
 
 @font-face { font-family: 'dinBold'; src: url('../fonts/DINNextBold.eot');
     src: url('../fonts/DINNextBold.eot?#iefix') format('embedded-opentype'),
             url('../fonts/DINNextBold.ttf') format('truetype'),
             url('../fonts/DINNextBold.woff') format('woff'),
             url('../fonts/DINNextBold.svg#DINNext') format('svg'); font-weight: normal; font-style: normal;
-    }
-
-:root {
-    --bs-font-sans-serif: 'din', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-body{ 
-    text-align: left;
-    direction: ltr;
-}
-a,
+a, 
 input,
 button,
 .btn {
@@ -61,12 +53,12 @@ button,
     clear: both
 }
  
-// a,
-// a:hover,
-// a:focus {
-//     text-decoration: none;
-//     color: inherit;
-// }
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: inherit;
+}
 
 img {
     max-width: 100%;
@@ -80,7 +72,16 @@ img {
     display: inline;
     line-height: 1;
 }
-
+.d-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.d-flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 // fix button line height for "din" family
 .btn:not(.dropdown-toggle) { 
     &:before{
@@ -101,6 +102,7 @@ img {
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(10px);
 }
+// shadow and animation hover effects
 .hover-shadow{
     transition: all .5s ease-in-out;
     &:hover,
@@ -122,3 +124,22 @@ img {
         transform: translateY(-10px);
     }
 } 
+// editing bootstrap color mode
+[data-bs-theme=dark]{
+    --bs-white-rgb: 0,0,0;
+    --bs-dark-rgb: 250,250,250;
+    --bs-light-rgb: 43,48,53;
+    --bs-black-rgb: 255,255,255;
+} 
+.d-rtl-block{
+    display: none!important;
+    [dir=rtl] &{
+        display: block!important;
+    }
+}
+.d-ltr-block{
+    display: none!important;
+    [dir=ltr] &{
+        display: block!important;
+    }
+}

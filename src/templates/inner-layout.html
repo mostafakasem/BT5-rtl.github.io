@@ -1,6 +1,6 @@
 <!doctype html>
-<html lang="en" dir="ltr">
-<!-- <html lang="ar" dir="rtl"> -->
+<!-- <html lang="en" dir="ltr" data-bs-theme="light"> -->
+<html lang="ar" dir="ltr"> 
 
 <head>
 	<meta charset="utf-8" />
@@ -17,9 +17,9 @@
 	{% endblock %}
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100"> 
 	{% include 'partials/_header.html' %}
-	<main class="flex-shrink-0 py-3">
+	<main class="">
 		{% block content %} {% endblock %}
 	</main> 
 	{% include 'partials/_footer.html' %}
@@ -27,7 +27,40 @@
 	{% block popup %} {% endblock %}
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-
+	<script> 
+		// switch language
+		var lan = document.querySelector('.toggle-lang');
+		if (typeof(lan) != 'undefined' && lan != null){
+			lan.onclick = function() { 
+				var tag = document.querySelector('html');        
+				var tagdir = tag.dir;   
+				var taglang = tag.lang;   
+				tagdir == 'ltr' ?  tag.setAttribute('dir', 'rtl') : tag.setAttribute('dir', 'ltr');   
+				taglang == 'en' ?  tag.setAttribute('lang', 'ar') : tag.setAttribute('lang', 'en');   
+			} 
+		}  
+ 
+		// switch dark mode
+		
+		var htmltags = document.querySelector('html');    
+		var localmode = localStorage.getItem("thememode");
+		if (typeof(localmode) != 'undefined' && localmode != null){
+			htmltags.setAttribute('data-bs-theme', localmode); 
+		}  
+		var mode = document.querySelector('.toggle-mode');      
+		if (typeof(mode) != 'undefined' && mode != null){
+			mode.onclick = function() {   
+				var htmltagmode = htmltags.getAttribute('data-bs-theme');      
+				if (htmltagmode  == 'light'){
+					htmltags.setAttribute('data-bs-theme', 'dark')
+					localStorage.setItem("thememode", 'dark');
+				} else {
+					htmltags.setAttribute('data-bs-theme', 'light')
+					localStorage.setItem("thememode", 'light');
+				}
+			} 
+		}   
+	</script>
 	{% block scripts %} {% endblock %} 
 </body>
 

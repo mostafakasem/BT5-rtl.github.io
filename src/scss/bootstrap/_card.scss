@@ -7,6 +7,8 @@
   --#{$prefix}card-spacer-y: #{$card-spacer-y};
   --#{$prefix}card-spacer-x: #{$card-spacer-x};
   --#{$prefix}card-title-spacer-y: #{$card-title-spacer-y};
+  --#{$prefix}card-title-color: #{$card-title-color};
+  --#{$prefix}card-subtitle-color: #{$card-subtitle-color};
   --#{$prefix}card-border-width: #{$card-border-width};
   --#{$prefix}card-border-color: #{$card-border-color};
   --#{$prefix}card-border-radius: #{$card-border-radius};
@@ -36,8 +38,8 @@
   @include box-shadow(var(--#{$prefix}card-box-shadow));
 
   > hr {
-    margin-right: 0;
-    margin-left: 0;
+    margin-inline-end: 0;
+    margin-inline-start: 0;
   }
 
   > .list-group {
@@ -73,11 +75,13 @@
 
 .card-title {
   margin-bottom: var(--#{$prefix}card-title-spacer-y);
+  color: var(--#{$prefix}card-title-color);
 }
 
 .card-subtitle {
   margin-top: calc(-.5 * var(--#{$prefix}card-title-spacer-y)); // stylelint-disable-line function-disallowed-list
   margin-bottom: 0;
+  color: var(--#{$prefix}card-subtitle-color);
 }
 
 .card-text:last-child {
@@ -90,7 +94,7 @@
   }
 
   + .card-link {
-    margin-left: var(--#{$prefix}card-spacer-x);
+    margin-inline-start: var(--#{$prefix}card-spacer-x);
   }
 }
 
@@ -127,9 +131,9 @@
 //
 
 .card-header-tabs {
-  margin-right: calc(-.5 * var(--#{$prefix}card-cap-padding-x)); // stylelint-disable-line function-disallowed-list
+  margin-inline-end: calc(-.5 * var(--#{$prefix}card-cap-padding-x)); // stylelint-disable-line function-disallowed-list
   margin-bottom: calc(-1 * var(--#{$prefix}card-cap-padding-y)); // stylelint-disable-line function-disallowed-list
-  margin-left: calc(-.5 * var(--#{$prefix}card-cap-padding-x)); // stylelint-disable-line function-disallowed-list
+  margin-inline-start: calc(-.5 * var(--#{$prefix}card-cap-padding-x)); // stylelint-disable-line function-disallowed-list
   border-bottom: 0;
 
   .nav-link.active {
@@ -139,8 +143,8 @@
 }
 
 .card-header-pills {
-  margin-right: calc(-.5 * var(--#{$prefix}card-cap-padding-x)); // stylelint-disable-line function-disallowed-list
-  margin-left: calc(-.5 * var(--#{$prefix}card-cap-padding-x)); // stylelint-disable-line function-disallowed-list
+  margin-inline-end: calc(-.5 * var(--#{$prefix}card-cap-padding-x)); // stylelint-disable-line function-disallowed-list
+  margin-inline-start: calc(-.5 * var(--#{$prefix}card-cap-padding-x)); // stylelint-disable-line function-disallowed-list
 }
 
 // Card image
@@ -193,8 +197,8 @@
       margin-bottom: 0;
 
       + .card {
-        margin-left: 0;
-        border-left: 0;
+        margin-inline-start: 0;
+        border-inline-start: 0;
       }
 
       // Handle rounded corners

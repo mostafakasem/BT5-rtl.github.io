@@ -18,6 +18,7 @@
 // The dropdown menu
 .dropdown-menu {
   // scss-docs-start dropdown-css-vars
+  --#{$prefix}dropdown-zindex: #{$zindex-dropdown};
   --#{$prefix}dropdown-min-width: #{$dropdown-min-width};
   --#{$prefix}dropdown-padding-x: #{$dropdown-padding-x};
   --#{$prefix}dropdown-padding-y: #{$dropdown-padding-y};
@@ -46,14 +47,14 @@
   // scss-docs-end dropdown-css-vars
 
   position: absolute;
-  z-index: $zindex-dropdown;
+  z-index: var(--#{$prefix}dropdown-zindex);
   display: none; // none by default, but block on "open" of the menu
   min-width: var(--#{$prefix}dropdown-min-width);
   padding: var(--#{$prefix}dropdown-padding-y) var(--#{$prefix}dropdown-padding-x);
   margin: 0; // Override default margin of ul
   @include font-size(var(--#{$prefix}dropdown-font-size));
   color: var(--#{$prefix}dropdown-color);
-  text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
+  text-align: start; // Ensures proper alignment if parent has it changed (e.g., modal footer)
   list-style: none;
   background-color: var(--#{$prefix}dropdown-bg);
   background-clip: padding-box;
@@ -130,7 +131,7 @@
     right: auto;
     left: 100%;
     margin-top: 0;
-    margin-left: var(--#{$prefix}dropdown-spacer);
+    margin-inline-start: var(--#{$prefix}dropdown-spacer);
   }
 
   .dropdown-toggle {
@@ -147,7 +148,7 @@
     right: 100%;
     left: auto;
     margin-top: 0;
-    margin-right: var(--#{$prefix}dropdown-spacer);
+    margin-inline-end: var(--#{$prefix}dropdown-spacer);
   }
 
   .dropdown-toggle {
@@ -183,6 +184,7 @@
   white-space: nowrap; // prevent links from randomly breaking onto new lines
   background-color: transparent; // For `<button>`s
   border: 0; // For `<button>`s
+  @include border-radius(var(--#{$prefix}dropdown-item-border-radius, 0));
 
   &:hover,
   &:focus {

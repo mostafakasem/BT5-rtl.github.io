@@ -1,34 +1,42 @@
-<header class="py-3 border-bottom bg-light" id="header">
+<header class="py-3 border-bottom bg-body-secondary" id="header">
 	<div class="container">
 		<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-			<a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none me-4">
-				<img src="assets/images/logo.svg" alt="logo" width="60">
-			</a>
-
+			<a href="index.html" class="mb-2 mb-lg-0 fs-3 mt-n2 fw-bold text-dark text-decoration-none me-lg-4">
+				Logo
+			</a> 
 			<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 text-capitalize">
-				<li><a href="index.html" class="nav-link px-3 link-secondary">home</a></li> 		
-				<li><a href="cheatsheet.html" class="nav-link px-3 link-dark">cheatsheet</a></li>
-				<li><a href="templates-list.html" class="nav-link px-3 link-dark">Templates</a></li> 
-			</ul>
-			<div class="dropdown text-end">
-				<a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1"
-					data-bs-toggle="dropdown" aria-expanded="false">
-					<svg class="bd-placeholder-img rounded-circle" width="30" height="30" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-						<title>Placeholder</title>
-						<rect width="100%" height="100%" fill="#296FB7"></rect><text x="10" y="13" fill="#fff" dy=".5em" class="text-white">M</text>
-					</svg>
-					<span class="mx-1">Mostafa</span>
-				</a>
-				<ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
-					<li><a class="dropdown-item" href="#">New project...</a></li>
-					<li><a class="dropdown-item" href="#">Settings</a></li>
-					<li><a class="dropdown-item" href="#">Profile</a></li>
-					<li>
-						<hr class="dropdown-divider">
-					</li>
-					<li><a class="dropdown-item text-danger" href="#">Sign out</a></li>
-				</ul>
+				<li><a href="index.html" class="nav-link px-3 text-dark">home</a></li> 		
+				<li><a href="cheatsheet.html" class="nav-link px-3 text-dark">cheatsheet</a></li>
+				<li><a href="templates-list.html" class="nav-link px-3 text-dark">Templates</a></li> 
+			</ul> 
+			<div class="text-end d-flex-center">
+				<a href="javascript:;" class="toggle-lang text-dark p-2">
+					<span class="d-rtl-block">English</span>
+					<span class="d-ltr-block">العربية</span>
+				</a>  
+				<a href="javascript:;" class="toggle-mode text-dark p-2 px-4">
+					<svg xmlns="http://www.w3.org/2000/svg" class="text-dark" width="20" height="20" viewBox="0 0 512 512"><path fill="currentcolor" d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48V464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
+					<span class="d-none">toggle color mode</span>
+				</a> 
+				<div class="dropdown">
+					<a href="javascript:;" class="d-block text-dark text-decoration-none dropdown-toggle py-2" id="dropdownUser1"
+						data-bs-toggle="dropdown" aria-expanded="false">
+						<svg xmlns="http://www.w3.org/2000/svg" class="text-dark me-2" width="20" height="20" viewBox="0 0 448 512"><defs><style>.secondary{opacity:.4}</style></defs><path fill="currentcolor" d="M274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"/><path class="secondary" fill="currentcolor" d="M352 128c0 70.69-57.3 128-128 128C153.3 256 96 198.7 96 128s57.31-128 128-128C294.7 0 352 57.31 352 128z"/></svg>
+						<span class="mx-1 text-dark d-none d-md-inline-block">Mostafa Kasem</span>
+					</a>
+					<ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+						<li><a class="dropdown-item" href="#">Profile</a></li>
+						<li><a class="dropdown-item" href="#">Settings</a></li>
+						<li><a class="dropdown-item" href="#">Support</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item text-danger" href="#">Sign out</a></li>
+					</ul>
+				</div> 
 			</div>
+		
+			
 		</div>
 	</div>
 </header>

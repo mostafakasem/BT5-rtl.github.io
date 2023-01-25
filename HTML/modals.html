@@ -1,0 +1,284 @@
+<!doctype html>
+<!-- <html lang="en" dir="ltr" data-bs-theme="light"> -->
+<html lang="ar" dir="ltr"> 
+
+<head>
+	<meta charset="utf-8" />
+	<title> Bootstrap V.5 template |  modals  </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#00AF7C" />
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+	<link rel="stylesheet" href="assets/css/style.css">
+	<meta name="author" content="Elm">
+	<meta name="description" content="project name">
+	<meta name="keywords" content="project name">
+	
+	
+</head>
+
+<body class="d-flex flex-column min-vh-100"> 
+	<header class="py-3 border-bottom bg-body-secondary" id="header">
+	<div class="container">
+		<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+			<a href="index.html" class="mb-2 mb-lg-0 fs-3 mt-n2 fw-bold text-dark text-decoration-none me-lg-4">
+				Logo
+			</a> 
+			<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 text-capitalize">
+				<li><a href="index.html" class="nav-link px-3 text-dark">home</a></li> 		
+				<li><a href="cheatsheet.html" class="nav-link px-3 text-dark">cheatsheet</a></li>
+				<li><a href="templates-list.html" class="nav-link px-3 text-dark">Templates</a></li> 
+			</ul> 
+			<div class="text-end d-flex-center">
+				<a href="javascript:;" class="toggle-lang text-dark p-2">
+					<span class="d-rtl-block">English</span>
+					<span class="d-ltr-block">العربية</span>
+				</a>  
+				<a href="javascript:;" class="toggle-mode text-dark p-2 px-4">
+					<svg xmlns="http://www.w3.org/2000/svg" class="text-dark" width="20" height="20" viewBox="0 0 512 512"><path fill="currentcolor" d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48V464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
+					<span class="d-none">toggle color mode</span>
+				</a> 
+				<div class="dropdown">
+					<a href="javascript:;" class="d-block text-dark text-decoration-none dropdown-toggle py-2" id="dropdownUser1"
+						data-bs-toggle="dropdown" aria-expanded="false">
+						<svg xmlns="http://www.w3.org/2000/svg" class="text-dark me-2" width="20" height="20" viewBox="0 0 448 512"><defs><style>.secondary{opacity:.4}</style></defs><path fill="currentcolor" d="M274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"/><path class="secondary" fill="currentcolor" d="M352 128c0 70.69-57.3 128-128 128C153.3 256 96 198.7 96 128s57.31-128 128-128C294.7 0 352 57.31 352 128z"/></svg>
+						<span class="mx-1 text-dark d-none d-md-inline-block">Mostafa Kasem</span>
+					</a>
+					<ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+						<li><a class="dropdown-item" href="#">Profile</a></li>
+						<li><a class="dropdown-item" href="#">Settings</a></li>
+						<li><a class="dropdown-item" href="#">Support</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item text-danger" href="#">Sign out</a></li>
+					</ul>
+				</div> 
+			</div>
+		
+			
+		</div>
+	</div>
+</header>
+	<main class="">
+		
+<div class="page-layout py-3">
+    <div class="container">
+        <nav aria-label="breadcrumb mb-2">
+    <ol class="breadcrumb small">
+        <li class="breadcrumb-item"><a href="#">Home</a></li> 
+        <li class="breadcrumb-item active" aria-current="page">modals </li>
+    </ol>
+</nav>
+<h1 class="page-title text-capitalize h2 mb-4 text-primary-emphasis fw-bold"> modals </h1> 
+        <div class="page-inner">
+            <div class="modal modal-sheet position-static d-block bg-light py-5" tabindex="-1" role="dialog"
+                id="modalSheet">
+                <div class="modal-dialog modal-sm" role="document">
+                    <div class="modal-content rounded-4 shadow">
+                        <div class="modal-header border-bottom-0">
+                            <h1 class="modal-title fs-5">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body py-0">
+                            <p>This is a modal sheet, a variation of the modal that docs itself to the bottom of the
+                                viewport like the newer share sheets in iOS.</p>
+                        </div>
+                        <div class="modal-footer flex-column border-top-0">
+                            <button type="button" class="btn btn-lg btn-primary w-100 mx-0 mb-2">Save changes</button>
+                            <button type="button" class="btn btn-lg btn-light w-100 mx-0"
+                                data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="m-0">
+
+            <div class="modal modal-alert position-static d-block bg-light py-5" tabindex="-1" role="dialog"
+                id="modalChoice">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content rounded-3 shadow">
+                        <div class="modal-body p-4 text-center">
+                            <h5 class="mb-0">Enable this setting?</h5>
+                            <p class="mb-0">You can always change your mind in your account settings.</p>
+                        </div>
+                        <div class="modal-footer flex-nowrap p-0">
+                            <button type="button"
+                                class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0 border-end"><strong>Yes,
+                                    enable</strong></button>
+                            <button type="button"
+                                class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0"
+                                data-bs-dismiss="modal">No thanks</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="m-0">
+
+            <div class="modal modal-tour position-static d-block bg-light py-5" tabindex="-1" role="dialog"
+                id="modalTour">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content rounded-4 shadow">
+                        <div class="modal-body p-5">
+                            <h2 class="fw-bold mb-0">What's new</h2>
+
+                            <ul class="d-grid gap-4 my-5 list-unstyled">
+                                <li class="d-flex gap-4">
+                                    <svg class="bi text-muted flex-shrink-0" width="48" height="48">
+                                        <use xlink:href="#grid-fill" /></svg>
+                                    <div>
+                                        <h5 class="mb-0">Grid view</h5>
+                                        Not into lists? Try the new grid view.
+                                    </div>
+                                </li>
+                                <li class="d-flex gap-4">
+                                    <svg class="bi text-warning flex-shrink-0" width="48" height="48">
+                                        <use xlink:href="#bookmark-star" /></svg>
+                                    <div>
+                                        <h5 class="mb-0">Bookmarks</h5>
+                                        Save items you love for easy access later.
+                                    </div>
+                                </li>
+                                <li class="d-flex gap-4">
+                                    <svg class="bi text-primary flex-shrink-0" width="48" height="48">
+                                        <use xlink:href="#film" /></svg>
+                                    <div>
+                                        <h5 class="mb-0">Video embeds</h5>
+                                        Share videos wherever you go.
+                                    </div>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-lg btn-primary mt-5 w-100"
+                                data-bs-dismiss="modal">Great, thanks!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="m-0">
+
+            <div class="modal modal-signin position-static d-block bg-light py-5" tabindex="-1" role="dialog"
+                id="modalSignin">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content rounded-4 shadow">
+                        <div class="modal-header p-5 pb-4 border-bottom-0">
+                            <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+                            <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body p-5 pt-0">
+                            <form class="">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control rounded-3" id="floatingInput"
+                                        placeholder="name@example.com">
+                                    <label for="floatingInput">Email address</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control rounded-3" id="floatingPassword"
+                                        placeholder="Password">
+                                    <label for="floatingPassword">Password</label>
+                                </div>
+                                <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign
+                                    up</button>
+                                <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+                                <hr class="my-4">
+                                <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+                                <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
+                                    <svg class="bi me-1" width="16" height="16">
+                                        <use xlink:href="#twitter" /></svg>
+                                    Sign up with Twitter
+                                </button>
+                                <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                                    <svg class="bi me-1" width="16" height="16">
+                                        <use xlink:href="#facebook" /></svg>
+                                    Sign up with Facebook
+                                </button>
+                                <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                                    <svg class="bi me-1" width="16" height="16">
+                                        <use xlink:href="#github" /></svg>
+                                    Sign up with GitHub
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+	</main> 
+	<footer class="footer mt-auto bg-body-secondary border-2 border-primary border-top">
+	<div class="container">
+		<div
+			class="align-items-center d-flex flex-column-reverse flex-md-row footer-2 justify-content-between py-3 py-md-0">
+			<div class="py-2 py-xl-4 text-center text-md-start">
+				<div class="social-network">
+					<a href="https://www.linkedin.com" class="icoLinkedin text-decoration-none me-3" title="Linkedin">
+						<svg aria-hidden="true" focusable="false" width="15" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <path fill="#979797" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"> </path> </svg>
+					</a>
+					<a href="https://twitter.com" class="icoTwitter text-decoration-none me-3" title="Twitter">
+						<svg aria-hidden="true" focusable="false" width="20" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path fill="#979797" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"> </path> </svg>
+					</a>
+					<a href="http://www.youtube.com" class="icoYoutube text-decoration-none me-3" title="Youtube">
+						<svg aria-hidden="true" focusable="false" width="20" data-prefix="fab" data-icon="youtube" class="svg-inline--fa fa-youtube fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"> <path fill="#979797" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"> </path> </svg>
+					</a>
+					<a href="#header" class="backtop text-decoration-none me-3" title="back to top">
+						<svg aria-hidden="true" focusable="false" width="20" data-prefix="fal" data-icon="arrow-circle-up" class="svg-inline--fa fa-arrow-circle-up fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path fill="#979797" d="M256 504c137 0 248-111 248-248S393 8 256 8 8 119 8 256s111 248 248 248zM40 256c0-118.7 96.1-216 216-216 118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216zm92.5-12.5l115-115.1c4.7-4.7 12.3-4.7 17 0l115 115.1c4.7 4.7 4.7 12.3 0 17l-6.9 6.9c-4.7 4.7-12.5 4.7-17.1-.2L273 181.7V372c0 6.6-5.4 12-12 12h-10c-6.6 0-12-5.4-12-12V181.7l-82.5 85.6c-4.7 4.8-12.4 4.9-17.1.2l-6.9-6.9c-4.7-4.8-4.7-12.4 0-17.1z"> </path> </svg>
+					</a>
+				</div>
+				<p class="m-0 text-secondary small mt-2">  Bootstrap version V.5.3 </p>
+			</div>
+			<div class="py-2 py-xl-4">
+				<a href="index.html" class="footer-logo fs-3 mt-n2 fw-bold text-dark text-decoration-none ">
+					Logo
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+	 
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script> 
+		// switch language
+		var lan = document.querySelector('.toggle-lang');
+		if (typeof(lan) != 'undefined' && lan != null){
+			lan.onclick = function() { 
+				var tag = document.querySelector('html');        
+				var tagdir = tag.dir;   
+				var taglang = tag.lang;   
+				tagdir == 'ltr' ?  tag.setAttribute('dir', 'rtl') : tag.setAttribute('dir', 'ltr');   
+				taglang == 'en' ?  tag.setAttribute('lang', 'ar') : tag.setAttribute('lang', 'en');   
+			} 
+		}  
+ 
+		// switch dark mode
+		
+		var htmltags = document.querySelector('html');    
+		var localmode = localStorage.getItem("thememode");
+		if (typeof(localmode) != 'undefined' && localmode != null){
+			htmltags.setAttribute('data-bs-theme', localmode); 
+		}  
+		var mode = document.querySelector('.toggle-mode');      
+		if (typeof(mode) != 'undefined' && mode != null){
+			mode.onclick = function() {   
+				var htmltagmode = htmltags.getAttribute('data-bs-theme');      
+				if (htmltagmode  == 'light'){
+					htmltags.setAttribute('data-bs-theme', 'dark')
+					localStorage.setItem("thememode", 'dark');
+				} else {
+					htmltags.setAttribute('data-bs-theme', 'light')
+					localStorage.setItem("thememode", 'light');
+				}
+			} 
+		}   
+	</script>
+	  
+</body>
+
+</html>

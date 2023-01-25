@@ -1,0 +1,37 @@
+{% extends "inner-layout.html" %}
+{% set title = '404' %}
+
+{% block content %}
+
+<div class="page-layout py-3">
+    <div class="container"> 
+        <div class="page-inner">
+            <div class="not-available p-2 border border-primary ps-5 mt-5 position-relative"> 
+                <div class="mb-5">
+                    <div class="position-absolute start-0 top-0">
+                        this text is start 0 top 0 [absolute position]
+                    </div>  
+                </div>
+             
+                <div class="overflow-hidden mb-4">
+                    <div class="float-start">
+                        this text is start floated
+                    </div> 
+                    <div class="float-end">
+                        this text is end floated
+                    </div> 
+                </div>
+                <div class="text-primary fs-5 mb-4">
+                    <p class="text-end"> This text goes to the end</p>
+                    <p class="text-start"> This text goes to the start</p>
+                </div>
+                <div class="p-4" data-bs-theme="light">
+                    <a href="index.html" class="border-3 border-end border-primary pe-3"> border at the end</a> 
+                </div>
+
+            </div>
+        </div> 
+    </div>
+</div>
+
+{% endblock %}

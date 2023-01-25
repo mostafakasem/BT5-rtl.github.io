@@ -1,118 +1,113 @@
 {% extends "inner-layout.html" %}
 {% set title = 'Home page' %}
 
+{% block style %}
+<style>
+	@media screen and (min-width:0) and (max-width:992px) {
+		lottie-player{
+			max-height:250px;
+		}
+	}
+</style>	
+{% endblock %}
+
 {% block content %}
 
 <div class="page-layout">  
-	<div class="container">  
-		<section> 
-			<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-				<div class="col-10 col-sm-8 col-lg-6">
-					<img class="bg-secondary w-100" src="https://images.unsplash.com/photo-1541471943749-e5976783f6c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy" class="rounded">
-				</div>
-				<div class="col-lg-6">
-					<h1 class="display-5 fw-bold lh-1 mb-3">A very big title here </h1>
+	<section class="bg-white py-5"> 
+		<div class="container">  
+			<div class="align-items-center row">
+				<div class="col-md-6">
+					<h1 class="fs-1 fw-bold lh-base mb-5 text-primary-emphasis">Bootstrap template support RTL </h1>
 					<p class="lead my-4 text-muted">
 						The readable content of a page will distract the reader from focusing on the external form of the text or the form of paragraphs placed on the page he is reading. Therefore, the Lorem Ipsum method is used because it gives a natural distribution - to some extent - to the letters instead of using “Here there is textual content,
 					</p>
 					<div class="d-grid gap-2 d-md-flex justify-content-md-start">
 						<button type="button" class="btn btn-primary btn-lg px-4 me-md-2">  Main button   </button>
-						<button type="button" class="btn btn-outline-secondary btn-lg px-4"> Secondary button   </button>
+						<button type="button" class="btn btn-outline-primary btn-lg px-4"> Secondary button   </button>
 					</div>
 				</div>
+				<div class="col-md-6">
+					<lottie-player src="assets/json/main.json"  background="transparent"  speed="1"  style="width: 100%; height: 500px;" autoplay loop  ></lottie-player>
+				</div>
 			</div>  
-		</section>
-	</div>
+		</div>
+	</section>
 
-		<section class="my-5 text-center bg-light py-5">
-			<div class="container">  
-				<div class="row">
-					<div class="col-lg-4 mb-4">
-						<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-							role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-							<title>Placeholder</title>
-							<rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
-								dy=".3em">140x140</text>
-						</svg>
-						<div class="my-4">
-							<h2>Title</h2>
-							<p>it acquires artificial intelligence through three main functional elements: the ability to analyze, the ability to compose, and logical reasoning.</p>
-							<p><a class="btn btn-outline-secondary" href="#">More details</a></p>
-						</div> 
-					</div><!-- /.col-lg-4 -->
-					<div class="col-lg-4 mb-4">
-						<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-							role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-							<title>Placeholder</title>
-							<rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
-								dy=".3em">140x140</text>
-						</svg>
-						<div class="my-4">
-							<h2>Another title</h2>
-							<p> Always remember that a computer does not have intelligence, but it acquires artificial intelligence through three main functional elements: the ability to analyze, the ability to compose, and logical reasoning. </p>
-							<p><a class="btn btn-outline-secondary" href="#">More details</a></p>
-						</div> 
-					</div><!-- /.col-lg-4 -->
-					<div class="col-lg-4 mb-4">
-						<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-							role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-							<title>Placeholder</title>
-							<rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
-								dy=".3em">140x140</text>
-						</svg>
-						<div class="my-4">
-							<h2> A third address to confirm  </h2>
-							<p> Always remember that a computer does not have intelligence, but it acquires artificial intelligence through three main functional elements: the ability to analyze, the ability to compose, and logical reasoning.							</p>
-							<p><a class="btn btn-outline-secondary" href="#">More details</a></p>
-						</div> 
-					</div><!-- /.col-lg-4 -->
+	<section class="text-center bg-body-secondary py-5">
+		<div class="container my-4">  
+			<div class="row g-4">
+				<div class="col-md-4">
+					<div class="d-flex-center">
+						<lottie-player src="assets/json/hexagonal.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"  hover loop  ></lottie-player>
+					</div>
+					<div class="my-4">
+						<h2 class="fs-3 fw-bold">Initiatives</h2>
+						<p class="text-light-emphasis fs-5"> Always remember that a computer does not have intelligence, but it acquires artificial intelligence </p>
+						<p><a class="btn btn-outline-secondary mt-4 px-xl-4" href="#">More details</a></p>
+					</div> 
+				</div>
+				<div class="col-md-4">
+					<div class="d-flex-center">
+						<lottie-player src="assets/json/home.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"  hover loop  ></lottie-player>
+					</div>
+					<div class="my-4">
+						<h2 class="fs-3 fw-bold">Analysis</h2>
+						<p class="text-light-emphasis fs-5"> Always remember that a computer does not have intelligence, but it acquires artificial intelligence </p>
+						<p><a class="btn btn-outline-secondary mt-4 px-xl-4" href="#">More details</a></p>
+					</div> 
+				</div>
+				<div class="col-md-4">
+					<div class="d-flex-center">
+						<lottie-player src="assets/json/document.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"  hover loop  ></lottie-player>
+					</div>
+					<div class="my-4">
+						<h2 class="fs-3 fw-bold"> Offerings  </h2>
+						<p class="text-light-emphasis fs-5"> Always remember that a computer does not have intelligence, but it acquires artificial intelligence </p>
+						<p><a class="btn btn-outline-secondary mt-4 px-xl-4" href="#">More details</a></p>
+					</div> 
 				</div>
 			</div>
-		</section> 
-	<div class="container">  
-		<section class="my-5 py-5">
-			<div class="row featurette">
+		</div>
+	</section> 
+	
+	<section class="py-5 bg-white border-bottom">
+		<div class="container">  
+			<div class="row">
+				<div class="col-md-5">
+					<lottie-player src="https://assets5.lottiefiles.com/packages/lf20_aj6xq4lp.json"  background="transparent"  speed="1"  style="width: 100%; height: 400px;"   hover loop  ></lottie-player>					
+				</div>
 				<div class="col-md-7 d-flex flex-column justify-content-center">
-					<h2 class="text-primary">Featured first title <span class="text-muted small">   It will blow your mind. </span></h2>
+					<h2 class="text-primary-emphasis">Featured first title <span class="text-black fs-5">   It will blow your mind. </span></h2>
 					<p class="lead my-3 text-muted"> 
 						The human face is a very complex and distinct part of his body. In fact, it is one of the most complex signaling systems we have available; It includes more than 40 independent muscles, both structurally and functionally, so that each of them can be operated independently of the other; It is one of the strongest indicators of emotions.	
 					</p>
 				</div>
-				<div class="col-md-5">
-					<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-						height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-						preserveAspectRatio="xMidYMid slice" focusable="false">
-						<title>Placeholder</title>
-						<rect width="100%" height="100%" fill="#ddd"></rect> 
-					</svg> 
-				</div>
 			</div> 
-		</section>
-		<section class="my-5 py-5">
-			<div class="row featurette">
-				<div class="col-md-7 order-md-2 d-flex flex-column justify-content-center">
-					<h2 class="text-primary">Oh yeah, that's good <span class="text-muted small">   See for yourself. </span></h2>
+		</div>	 
+	</section>
+
+	<section class=" py-5 bg-white">
+		<div class="container">  
+			<div class="row flex-md-row-reverse">
+				<div class="col-md-5">
+					<lottie-player src="assets/json/sample-2.json"  background="transparent"  speed="1"  style="width: 100%; height: 400px;"   hover loop  ></lottie-player>			
+				</div>
+				<div class="col-md-7 d-flex flex-column justify-content-center">
+					<h2 class="text-primary-emphasis">Oh yeah, that's good <span class="text-black fs-5">   See for yourself. </span></h2>
 					<p class="lead my-3 text-muted">
 						When we laugh or cry, we display our emotions, allowing others to peek into our mind while "reading" our faces based on changes in key facial components such as the eyes, eyebrows, eyelids, nose, and lips.
 					</p>
 				</div>
-				<div class="col-md-5 order-md-1">
-					<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-						height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-						preserveAspectRatio="xMidYMid slice" focusable="false">
-						<title>Placeholder</title>
-						<rect width="100%" height="100%" fill="#ddd"></rect> 
-					</svg>
-			
-				</div>
 			</div>
-		</section>
-	</div>	 
+		</div>	 
+	</section>
+	
 </div>
 
 {% endblock %}
 
 
 {% block scripts %}
-
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 {% endblock %}

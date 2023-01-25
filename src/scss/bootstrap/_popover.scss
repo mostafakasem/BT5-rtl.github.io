@@ -56,7 +56,7 @@
 
 .bs-popover-top {
   > .popover-arrow {
-    bottom: calc((var(--#{$prefix}popover-arrow-height) * -1) - var(--#{$prefix}popover-border-width)); // stylelint-disable-line function-disallowed-list
+    bottom: calc(-1 * (var(--#{$prefix}popover-arrow-height)) - var(--#{$prefix}popover-border-width)); // stylelint-disable-line function-disallowed-list
 
     &::before,
     &::after {
@@ -78,7 +78,7 @@
 /* rtl:begin:ignore */
 .bs-popover-end {
   > .popover-arrow {
-    left: calc((var(--#{$prefix}popover-arrow-height) * -1) - var(--#{$prefix}popover-border-width)); // stylelint-disable-line function-disallowed-list
+    left: calc(-1 * (var(--#{$prefix}popover-arrow-height)) - var(--#{$prefix}popover-border-width)); // stylelint-disable-line function-disallowed-list
     width: var(--#{$prefix}popover-arrow-height);
     height: var(--#{$prefix}popover-arrow-width);
 
@@ -89,12 +89,12 @@
 
     &::before {
       left: 0;
-      border-right-color: var(--#{$prefix}popover-arrow-border);
+      border-inline-end-color: var(--#{$prefix}popover-arrow-border);
     }
 
     &::after {
       left: var(--#{$prefix}popover-border-width);
-      border-right-color: var(--#{$prefix}popover-bg);
+      border-inline-end-color: var(--#{$prefix}popover-bg);
     }
   }
 }
@@ -103,7 +103,7 @@
 
 .bs-popover-bottom {
   > .popover-arrow {
-    top: calc((var(--#{$prefix}popover-arrow-height) * -1) - var(--#{$prefix}popover-border-width)); // stylelint-disable-line function-disallowed-list
+    top: calc(-1 * (var(--#{$prefix}popover-arrow-height)) - var(--#{$prefix}popover-border-width)); // stylelint-disable-line function-disallowed-list
 
     &::before,
     &::after {
@@ -128,7 +128,7 @@
     left: 50%;
     display: block;
     width: var(--#{$prefix}popover-arrow-width);
-    margin-left: calc(var(--#{$prefix}popover-arrow-width) * -.5); // stylelint-disable-line function-disallowed-list
+    margin-inline-start: calc(-.5 * var(--#{$prefix}popover-arrow-width)); // stylelint-disable-line function-disallowed-list
     content: "";
     border-bottom: var(--#{$prefix}popover-border-width) solid var(--#{$prefix}popover-header-bg);
   }
@@ -137,7 +137,7 @@
 /* rtl:begin:ignore */
 .bs-popover-start {
   > .popover-arrow {
-    right: calc((var(--#{$prefix}popover-arrow-height) * -1) - var(--#{$prefix}popover-border-width)); // stylelint-disable-line function-disallowed-list
+    right: calc(-1 * (var(--#{$prefix}popover-arrow-height)) - var(--#{$prefix}popover-border-width)); // stylelint-disable-line function-disallowed-list
     width: var(--#{$prefix}popover-arrow-height);
     height: var(--#{$prefix}popover-arrow-width);
 
@@ -148,12 +148,12 @@
 
     &::before {
       right: 0;
-      border-left-color: var(--#{$prefix}popover-arrow-border);
+      border-inline-start-color: var(--#{$prefix}popover-arrow-border);
     }
 
     &::after {
       right: var(--#{$prefix}popover-border-width);
-      border-left-color: var(--#{$prefix}popover-bg);
+      border-inline-start-color: var(--#{$prefix}popover-bg);
     }
   }
 }
