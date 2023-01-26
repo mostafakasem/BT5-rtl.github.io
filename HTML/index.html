@@ -1,5 +1,4 @@
 <!doctype html>
-<!-- <html lang="en" dir="ltr" data-bs-theme="light"> -->
 <html lang="ar" dir="ltr"> 
 
 <head>
@@ -79,7 +78,7 @@
 						The readable content of a page will distract the reader from focusing on the external form of the text or the form of paragraphs placed on the page he is reading. Therefore, the Lorem Ipsum method is used because it gives a natural distribution - to some extent - to the letters instead of using “Here there is textual content,
 					</p>
 					<div class="d-grid gap-2 d-md-flex justify-content-md-start">
-						<button type="button" class="btn btn-primary btn-lg px-4 me-md-2">  Main button   </button>
+						<a href="https://github.com/mostafakasem/BT5-rtl.github.io" class="btn btn-primary btn-lg px-4 me-md-2">  Main button   </a>
 						<button type="button" class="btn btn-outline-primary btn-lg px-4"> Secondary button   </button>
 					</div>
 				</div>
@@ -209,13 +208,17 @@
 			} 
 		}  
  
-		// switch dark mode
-		
+		// set default mode		
 		var htmltags = document.querySelector('html');    
 		var localmode = localStorage.getItem("thememode");
 		if (typeof(localmode) != 'undefined' && localmode != null){
 			htmltags.setAttribute('data-bs-theme', localmode); 
 		}  
+		else {
+			htmltags.setAttribute('data-bs-theme', 'light')
+			localStorage.setItem("thememode", 'light');
+		}
+		// switch dark mode	
 		var mode = document.querySelector('.toggle-mode');      
 		if (typeof(mode) != 'undefined' && mode != null){
 			mode.onclick = function() {   

@@ -1,5 +1,4 @@
 <!doctype html>
-<!-- <html lang="en" dir="ltr" data-bs-theme="light"> -->
 <html lang="ar" dir="ltr"> 
 
 <head>
@@ -225,13 +224,17 @@
 			} 
 		}  
  
-		// switch dark mode
-		
+		// set default mode		
 		var htmltags = document.querySelector('html');    
 		var localmode = localStorage.getItem("thememode");
 		if (typeof(localmode) != 'undefined' && localmode != null){
 			htmltags.setAttribute('data-bs-theme', localmode); 
 		}  
+		else {
+			htmltags.setAttribute('data-bs-theme', 'light')
+			localStorage.setItem("thememode", 'light');
+		}
+		// switch dark mode	
 		var mode = document.querySelector('.toggle-mode');      
 		if (typeof(mode) != 'undefined' && mode != null){
 			mode.onclick = function() {   
